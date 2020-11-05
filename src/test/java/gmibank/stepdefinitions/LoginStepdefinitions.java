@@ -1,4 +1,4 @@
 package gmibank.stepdefinitions;
 
-public class LoginStepdefinitions {
+public class LogInStepdefinitions {
 }

@@ -4,24 +4,18 @@ import java.io.FileInputStream;
 import java.util.Properties;
 
 public class ConfigurationReader {
-
-    private static Properties properties;
+    static Properties properties;
     static{
-        String dosyaYolu = "configuration.properties";
+        String path = "configuration.properties";
         try{
-            // okumak istediğiniz dosyanın, dosya yolunu göndermeniz gerekiyor.
-            FileInputStream fileInputStream = new FileInputStream(dosyaYolu);
+            FileInputStream file = new FileInputStream(path);
             properties = new Properties();
-            properties.load(fileInputStream);
+            properties.load(file);
         }catch (Exception e){
 
         }
     }
-
     public static String getProperty(String key){
-        String deger = properties.getProperty(key);
-        return deger;
+        return properties.getProperty(key);
     }
-
-
 }
