@@ -163,13 +163,15 @@ public class Driver {
      * fails if the element matching the provided locator is not found or not displayed
      *
      * @param by
+     * @return
      */
-    public static void verifyElementDisplayed(By by) {
+    public static boolean verifyElementDisplayed(By by) {
         try {
             assertTrue("Element not visible: " + by, Driver.getDriver().findElement(by).isDisplayed());
         } catch (NoSuchElementException e) {
             Assert.fail("Element not found: " + by);
         }
+        return false;
     }
 
     private static void assertTrue(String s, boolean displayed) {

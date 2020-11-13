@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="4.973">
-<testcase classname="API Test" name="TC01_kullanici apinin calistini kontrol eder" time="4.38">
-<system-out><![CDATA[Given kullanici kendisine verilen token ile apiye baglanir..................passed
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="15.833">
+<testcase classname="Kullaci Girisi" name="TC04_GMI da kullanici login sayfasindan gecerli kimlik bilgileriyle giris yapar" time="15.023">
+<system-out><![CDATA[Given Kullanici login sayfasina gider.......................................passed
+And username textbox kutusuna gecerli username yazar........................passed
+And password textbox kutusuna gecerli password yazar........................passed
+And sign in butonuna tiklayarak giris yapar.................................passed
+Then kullanici kendi username ini login kisminda gorur......................passed
 ]]></system-out>
 </testcase>
 </testsuite>

@@ -3,42 +3,90 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-11-05T12:21:55.471Z",
+        "start_timestamp": "2020-11-09T23:59:44.198Z",
         "line": 3,
-        "name": "TC01_kullanici apinin calistini kontrol eder",
+        "name": "TC04_GMI da kullanici login sayfasindan gecerli kimlik bilgileriyle giris yapar",
         "description": "",
-        "id": "api-test;tc01-kullanici-apinin-calistini-kontrol-eder",
+        "id": "kullaci-girisi;tc04-gmi-da-kullanici-login-sayfasindan-gecerli-kimlik-bilgileriyle-giris-yapar",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 4276000000,
+              "duration": 12141000000,
               "status": "passed"
             },
             "line": 4,
-            "name": "kullanici kendisine verilen token ile apiye baglanir",
+            "name": "Kullanici login sayfasina gider",
             "match": {
-              "location": "gmibank.stepdefinitions.ApiStepDefinitions.kullanici_kendisine_verilen_token_ile_apiye_baglanir()"
+              "location": "gmibank.stepdefinitions.LogInStepdefinitions.kullanici_login_sayfasina_gider()"
             },
             "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 243000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "username textbox kutusuna gecerli username yazar",
+            "match": {
+              "location": "gmibank.stepdefinitions.LogInStepdefinitions.username_textbox_kutusuna_gecerli_username_yazar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 221000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "password textbox kutusuna gecerli password yazar",
+            "match": {
+              "location": "gmibank.stepdefinitions.LogInStepdefinitions.password_textbox_kutusuna_gecerli_password_yazar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 166000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "sign in butonuna tiklayarak giris yapar",
+            "match": {
+              "location": "gmibank.stepdefinitions.LogInStepdefinitions.sign_in_butonuna_tiklayarak_giris_yapar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2061000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "kullanici kendi username ini login kisminda gorur",
+            "match": {
+              "location": "gmibank.stepdefinitions.LogInStepdefinitions.kullanici_kendi_username_ini_login_kisminda_gorur()"
+            },
+            "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@api"
+            "name": "@gmibankuserloginparameter"
           }
         ]
       }
     ],
-    "name": "API Test",
+    "name": "Kullaci Girisi",
     "description": "",
-    "id": "api-test",
+    "id": "kullaci-girisi",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/api.feature",
+    "uri": "file:src/test/resources/features/SignIn.feature",
     "tags": [
       {
-        "name": "@api",
+        "name": "@gmibankuserloginparameter",
         "type": "Tag",
         "location": {
           "line": 1,
