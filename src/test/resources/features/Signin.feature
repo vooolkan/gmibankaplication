@@ -1,4 +1,4 @@
-@gmibankuserloginparameter
+@gmibankuserlogin
 Feature: Kullaci Girisi
   Scenario: TC04_GMI da kullanici login sayfasindan gecerli kimlik bilgileriyle giris yapar
     Given Kullanici login sayfasina gider

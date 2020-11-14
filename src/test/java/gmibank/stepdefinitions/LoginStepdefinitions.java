@@ -7,7 +7,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
 
-public class LogInStepdefinitions {
+public class LoginStepdefinitions {
     SignInPage signInPage = new SignInPage();
 
     @Given("Kullanici login sayfasina gider")
@@ -19,12 +19,12 @@ public class LogInStepdefinitions {
     }
     @Given("username textbox kutusuna gecerli username yazar")
     public void username_textbox_kutusuna_gecerli_username_yazar() {
-        signInPage.userName.sendKeys(ConfigurationReader.getProperty("gmi_username"));
+        signInPage.userNameTexBox.sendKeys(ConfigurationReader.getProperty("gmi_username"));
     }
 
     @Given("password textbox kutusuna gecerli password yazar")
     public void password_textbox_kutusuna_gecerli_password_yazar() {
-        signInPage.password.sendKeys(ConfigurationReader.getProperty("gmi_password"));
+        signInPage.passwordTextbox.sendKeys(ConfigurationReader.getProperty("gmi_password"));
     }
 
     @Given("sign in butonuna tiklayarak giris yapar")

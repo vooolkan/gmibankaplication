@@ -5,7 +5,7 @@ formatter.feature({
   "keyword": "Feature",
   "tags": [
     {
-      "name": "@gmibankuserloginparameter"
+      "name": "@gmibankuserlogin"
     }
   ]
 });
@@ -15,7 +15,7 @@ formatter.scenario({
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@gmibankuserloginparameter"
+      "name": "@gmibankuserlogin"
     }
   ]
 });
@@ -24,7 +24,7 @@ formatter.step({
   "keyword": "Given "
 });
 formatter.match({
-  "location": "gmibank.stepdefinitions.LogInStepdefinitions.kullanici_login_sayfasina_gider()"
+  "location": "gmibank.stepdefinitions.LoginStepdefinitions.kullanici_login_sayfasina_gider()"
 });
 formatter.result({
   "status": "passed"
@@ -34,7 +34,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "gmibank.stepdefinitions.LogInStepdefinitions.username_textbox_kutusuna_gecerli_username_yazar()"
+  "location": "gmibank.stepdefinitions.LoginStepdefinitions.username_textbox_kutusuna_gecerli_username_yazar()"
 });
 formatter.result({
   "status": "passed"
@@ -44,7 +44,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "gmibank.stepdefinitions.LogInStepdefinitions.password_textbox_kutusuna_gecerli_password_yazar()"
+  "location": "gmibank.stepdefinitions.LoginStepdefinitions.password_textbox_kutusuna_gecerli_password_yazar()"
 });
 formatter.result({
   "status": "passed"
@@ -54,7 +54,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "gmibank.stepdefinitions.LogInStepdefinitions.sign_in_butonuna_tiklayarak_giris_yapar()"
+  "location": "gmibank.stepdefinitions.LoginStepdefinitions.sign_in_butonuna_tiklayarak_giris_yapar()"
 });
 formatter.result({
   "status": "passed"
@@ -64,7 +64,7 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "gmibank.stepdefinitions.LogInStepdefinitions.kullanici_kendi_username_ini_login_kisminda_gorur()"
+  "location": "gmibank.stepdefinitions.LoginStepdefinitions.kullanici_kendi_username_ini_login_kisminda_gorur()"
 });
 formatter.result({
   "status": "passed"

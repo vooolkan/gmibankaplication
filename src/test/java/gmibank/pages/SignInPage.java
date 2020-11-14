@@ -11,11 +11,17 @@ public class SignInPage {
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
+    @FindBy(xpath = "//a[@class='d-flex align-items-center dropdown-toggle nav-link']")
+    public WebElement insanButton;
+
+    @FindBy(xpath = "//span[.='Sign in']")
+    public WebElement signInSekme;
+
     @FindBy (id = "username")
-    public WebElement userName;
+    public WebElement userNameTexBox;
 
     @FindBy (id = "password")
-    public WebElement password;
+    public WebElement passwordTextbox;
 
     @FindBy (xpath = "//button[@type='submit']")
     public WebElement signInButton;
