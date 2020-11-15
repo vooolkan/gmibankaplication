@@ -26,7 +26,7 @@ public class SignInPage {
     @FindBy (xpath = "//button[@type='submit']")
     public WebElement signInButton;
 
-    @FindBy(xpath = "//span[.='musteri4 use']")
+    @FindBy(xpath ="//*[@id=\"account-menu\"]/a/span")
     public  WebElement userNameText;
 
     @FindBy(xpath = "//span[.='Sign out']")
