@@ -1,22 +1,22 @@
 [
   {
-    "line": 2,
+    "line": 3,
     "elements": [
       {
-        "start_timestamp": "2020-11-15T16:07:13.967Z",
-        "line": 3,
-        "name": "",
+        "start_timestamp": "2020-11-15T18:46:16.781Z",
+        "line": 14,
+        "name": "Kullanici gecerli kimlik bilgileriyle customer olusturur",
         "description": "",
-        "id": "us-10-employee-adres-olusturabilir;",
+        "id": "kullanici-customer-sayfasina-gider;kullanici-gecerli-kimlik-bilgileriyle-customer-olusturur;gecerli-data-girilir;2",
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 15072000000,
+              "duration": 14496000000,
               "status": "passed"
             },
-            "line": 4,
+            "line": 6,
             "name": "Kullanici login sayfasina gider",
             "match": {
               "location": "gmibank.stepdefinitions.LoginStepdefinitions.kullanici_login_sayfasina_gider()"
@@ -25,46 +25,46 @@
           },
           {
             "result": {
-              "duration": 520000000,
+              "duration": 387000000,
               "status": "passed"
             },
-            "line": 5,
-            "name": "username textbox kutusuna gecerli \"Azizeke47\" girer",
+            "line": 7,
+            "name": "username textbox kutusuna gecerli username \"Azizeke47\" girer",
             "match": {
               "arguments": [
                 {
                   "val": "\"Azizeke47\"",
-                  "offset": 34
+                  "offset": 43
                 }
               ],
-              "location": "gmibank.stepdefinitions.AdresStepDefinitions.username_textbox_kutusuna_gecerli_girer(java.lang.String)"
+              "location": "gmibank.stepdefinitions.CustomerStepDefinitions.username_textbox_kutusuna_gecerli_username_girer(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 342000000,
+              "duration": 319000000,
               "status": "passed"
             },
-            "line": 6,
-            "name": "password textbox kutusuna gecerli \"Mardin4738.\" girer",
+            "line": 8,
+            "name": "password textbox kutusuna gecerli password \"Mardin4738.\" girer",
             "match": {
               "arguments": [
                 {
                   "val": "\"Mardin4738.\"",
-                  "offset": 34
+                  "offset": 43
                 }
               ],
-              "location": "gmibank.stepdefinitions.AdresStepDefinitions.password_textbox_kutusuna_gecerli_girer(java.lang.String)"
+              "location": "gmibank.stepdefinitions.CustomerStepDefinitions.password_textbox_kutusuna_gecerli_password_girer(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 148000000,
+              "duration": 229000000,
               "status": "passed"
             },
-            "line": 7,
+            "line": 9,
             "name": "sign in butonuna tiklayarak giris yapar",
             "match": {
               "location": "gmibank.stepdefinitions.LoginStepdefinitions.sign_in_butonuna_tiklayarak_giris_yapar()"
@@ -73,34 +73,50 @@
           },
           {
             "result": {
-              "duration": 2292000000,
+              "duration": 2047000000,
               "status": "passed"
             },
-            "line": 8,
+            "line": 10,
             "name": "kullanici kendi username ini login kisminda gorur",
             "match": {
               "location": "gmibank.stepdefinitions.LoginStepdefinitions.kullanici_kendi_username_ini_login_kisminda_gorur()"
             },
-            "keyword": "And "
-          },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@customer"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-15T18:46:34.537Z",
+        "line": 18,
+        "name": "Employee create a new customer sayfasina gider",
+        "description": "",
+        "id": "kullanici-customer-sayfasina-gider;employee-create-a-new-customer-sayfasina-gider",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
           {
             "result": {
-              "duration": 170000000,
+              "duration": 374000000,
               "status": "passed"
             },
-            "line": 9,
+            "line": 19,
             "name": "Employee My operations a tiklar",
             "match": {
               "location": "gmibank.stepdefinitions.CustomerStepDefinitions.employee_My_operations_a_tiklar()"
             },
-            "keyword": "And "
+            "keyword": "Given "
           },
           {
             "result": {
-              "duration": 286000000,
+              "duration": 246000000,
               "status": "passed"
             },
-            "line": 10,
+            "line": 20,
             "name": "Employee Manage customera tiklar",
             "match": {
               "location": "gmibank.stepdefinitions.CustomerStepDefinitions.employee_Manage_customera_tiklar()"
@@ -109,10 +125,10 @@
           },
           {
             "result": {
-              "duration": 584000000,
+              "duration": 540000000,
               "status": "passed"
             },
-            "line": 11,
+            "line": 21,
             "name": "Employee Create a new customera tiklar",
             "match": {
               "location": "gmibank.stepdefinitions.CustomerStepDefinitions.employee_Create_a_new_customera_tiklar()"
@@ -121,10 +137,10 @@
           },
           {
             "result": {
-              "duration": 920000000,
+              "duration": 1321000000,
               "status": "passed"
             },
-            "line": 12,
+            "line": 22,
             "name": "Employee SSN textboxina tiklar ve gecerli SSN numarsini girer",
             "match": {
               "location": "gmibank.stepdefinitions.CustomerStepDefinitions.employee_SSN_textboxina_tiklar_ve_gecerli_SSN_numarsini_girer()"
@@ -133,10 +149,10 @@
           },
           {
             "result": {
-              "duration": 10223000000,
+              "duration": 10551000000,
               "status": "passed"
             },
-            "line": 13,
+            "line": 23,
             "name": "Employee serach boxa tiklar",
             "match": {
               "location": "gmibank.stepdefinitions.CustomerStepDefinitions.employee_serach_boxa_tiklar()"
@@ -145,140 +161,59 @@
           },
           {
             "result": {
-              "duration": 170000000,
+              "duration": 3101000000,
               "status": "passed"
             },
-            "line": 14,
-            "name": "Employee middle textboxina gecerli degeri girer",
+            "line": 24,
+            "name": "Employee firstname gorur",
             "match": {
-              "location": "gmibank.stepdefinitions.AdresStepDefinitions.employee_middle_textboxina_gecerli_degeri_girer()"
+              "location": "gmibank.stepdefinitions.CustomerStepDefinitions.employee_firstname_gorur()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 431000000,
+              "duration": 50000000,
               "status": "passed"
             },
-            "line": 15,
-            "name": "Employee phonenumber textboxina gecerli degeri girer",
+            "line": 25,
+            "name": "Employee lastname gorur",
             "match": {
-              "location": "gmibank.stepdefinitions.AdresStepDefinitions.employee_phonenumber_textboxina_gecerli_degeri_girer()"
+              "location": "gmibank.stepdefinitions.CustomerStepDefinitions.employee_lastname_gorur()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 288000000,
+              "duration": 41000000,
               "status": "passed"
             },
-            "line": 16,
-            "name": "Employee zip code gecerli degri girer",
+            "line": 26,
+            "name": "Employee email gorur",
             "match": {
-              "location": "gmibank.stepdefinitions.AdresStepDefinitions.employee_zip_code_gecerli_degri_girer()"
+              "location": "gmibank.stepdefinitions.CustomerStepDefinitions.employee_email_gorur()"
             },
             "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 296000000,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "Employee adress textboxina gecerli degeri girer",
-            "match": {
-              "location": "gmibank.stepdefinitions.AdresStepDefinitions.employee_adress_textboxina_gecerli_degeri_girer()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 300000000,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "Employee city textboxina gecerli degeri girer",
-            "match": {
-              "location": "gmibank.stepdefinitions.AdresStepDefinitions.employee_city_textboxina_gecerli_degeri_girer()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 331000000,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "Employee country dropdownda gecerli ulkeyi secer",
-            "match": {
-              "location": "gmibank.stepdefinitions.AdresStepDefinitions.employee_country_dropdownda_gecerli_ulkeyi_secer()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 358000000,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "Employee state textboxina gecerli state girer",
-            "match": {
-              "location": "gmibank.stepdefinitions.AdresStepDefinitions.employee_state_textboxina_gecerli_state_girer()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 332000000,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "Employee accout secer",
-            "match": {
-              "location": "gmibank.stepdefinitions.AdresStepDefinitions.employee_accout_secer()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 282000000,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "Employee zelle checkboxina tiklar",
-            "match": {
-              "location": "gmibank.stepdefinitions.AdresStepDefinitions.employee_zelle_checkboxina_tiklar()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1467000000,
-              "status": "passed"
-            },
-            "line": 23,
-            "name": "Employee save butonuna tiklar ve basari mesajini alir",
-            "match": {
-              "location": "gmibank.stepdefinitions.AdresStepDefinitions.employee_save_butonuna_tiklar_ve_basari_mesajini_alir()"
-            },
-            "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@adress"
+            "name": "@customer"
+          },
+          {
+            "name": "@managecustomer"
           }
         ]
       }
     ],
-    "name": "US_10 Employee adres olusturabilir",
+    "name": "Kullanici customer sayfasina gider",
     "description": "",
-    "id": "us-10-employee-adres-olusturabilir",
+    "id": "kullanici-customer-sayfasina-gider",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/adress.feature",
+    "uri": "file:src/test/resources/features/customer.feature",
     "tags": [
       {
-        "name": "@adress",
+        "name": "@customer",
         "type": "Tag",
         "location": {
           "line": 1,

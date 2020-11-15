@@ -1,26 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="36.552">
-<testcase classname="US_10 Employee adres olusturabilir" name="_2" time="35.081">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="35.028">
+<testcase classname="Kullanici customer sayfasina gider" name="Kullanici gecerli kimlik bilgileriyle customer olusturur" time="17.731">
 <system-out><![CDATA[Given Kullanici login sayfasina gider.......................................passed
-And username textbox kutusuna gecerli "Azizeke47" girer.....................passed
-And password textbox kutusuna gecerli "Mardin4738." girer...................passed
+And username textbox kutusuna gecerli username "Azizeke47" girer............passed
+And password textbox kutusuna gecerli password "Mardin4738." girer..........passed
 And sign in butonuna tiklayarak giris yapar.................................passed
-And kullanici kendi username ini login kisminda gorur.......................passed
-And Employee My operations a tiklar.........................................passed
+Then kullanici kendi username ini login kisminda gorur......................passed
+]]></system-out>
+</testcase>
+<testcase classname="Kullanici customer sayfasina gider" name="Employee create a new customer sayfasina gider" time="16.231">
+<system-out><![CDATA[Given Employee My operations a tiklar.......................................passed
 And Employee Manage customera tiklar........................................passed
 And Employee Create a new customera tiklar..................................passed
 And Employee SSN textboxina tiklar ve gecerli SSN numarsini girer...........passed
 And Employee serach boxa tiklar.............................................passed
-And Employee middle textboxina gecerli degeri girer.........................passed
-And Employee phonenumber textboxina gecerli degeri girer....................passed
-And Employee zip code gecerli degri girer...................................passed
-And Employee adress textboxina gecerli degeri girer.........................passed
-And Employee city textboxina gecerli degeri girer...........................passed
-And Employee country dropdownda gecerli ulkeyi secer........................passed
-And Employee state textboxina gecerli state girer...........................passed
-And Employee accout secer...................................................passed
-And Employee zelle checkboxina tiklar.......................................passed
-Then Employee save butonuna tiklar ve basari mesajini alir..................passed
+And Employee firstname gorur................................................passed
+And Employee lastname gorur.................................................passed
+And Employee email gorur....................................................passed
 ]]></system-out>
 </testcase>
 </testsuite>

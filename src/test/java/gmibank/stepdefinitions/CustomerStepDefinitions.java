@@ -2,7 +2,6 @@ package gmibank.stepdefinitions;
 
 import gmibank.pages.CustomerPage;
 import io.cucumber.java.en.Given;
-import org.junit.Assert;
 
 public class CustomerStepDefinitions {
 
@@ -53,27 +52,33 @@ public class CustomerStepDefinitions {
 
     }
 
-    @Given("Employee firstname gorur")
-    public void employee_firstname_gorur() {
-        String isim= "Aziz";
-        Assert.assertEquals(isim,customerPage.firstname.getText());
+//    @Given("Employee firstname gorur")
+//    public void employee_firstname_gorur() {
+//        String isim= "Aziz";
+//        Assert.assertEquals(isim,customerPage.firstname.getText());
 
-
-
-
-
-
-
+        @Given("Employee firstname gorur")
+        public void employee_firstname_gorur() throws InterruptedException {
+            Thread.sleep(3000);
+            String isim2=  customerPage.firstname.getAttribute("value");
+            System.out.println(isim2);
 
     }
 
     @Given("Employee lastname gorur")
     public void employee_lastname_gorur() {
 
+        String soyisim2= customerPage.lastname.getAttribute("value");
+        System.out.println(soyisim2);
+
+
     }
 
     @Given("Employee email gorur")
     public void employee_email_gorur() {
+
+        String email2 = customerPage.Email.getAttribute("value");
+        System.out.println(email2);
 
     }
 
