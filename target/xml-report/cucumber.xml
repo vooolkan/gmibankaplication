@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="25.502">
-<testcase classname="Kullanici customer sayfasina gider" name="Kullanici gecerli kimlik bilgileriyle customer olusturur" time="19.108">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="35.028">
+<testcase classname="Kullanici customer sayfasina gider" name="Kullanici gecerli kimlik bilgileriyle customer olusturur" time="17.731">
 <system-out><![CDATA[Given Kullanici login sayfasina gider.......................................passed
 And username textbox kutusuna gecerli username "Azizeke47" girer............passed
 And password textbox kutusuna gecerli password "Mardin4738." girer..........passed
@@ -8,7 +8,7 @@ And sign in butonuna tiklayarak giris yapar.................................pass
 Then kullanici kendi username ini login kisminda gorur......................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Kullanici customer sayfasina gider" name="Employee create a new customer sayfasina gider" time="4.945">
+<testcase classname="Kullanici customer sayfasina gider" name="Employee create a new customer sayfasina gider" time="16.231">
 <system-out><![CDATA[Given Employee My operations a tiklar.......................................passed
 And Employee Manage customera tiklar........................................passed
 And Employee Create a new customera tiklar..................................passed
@@ -20,3 +20,4 @@ And Employee email gorur....................................................pass
 ]]></system-out>
 </testcase>
 </testsuite>
+
