@@ -1,6 +1,7 @@
 package gmibank.stepdefinitions;
 
 import gmibank.pages.HomePage;
+import gmibank.pages.RegistrationPage;
 import gmibank.pages.SettingsPage;
 import gmibank.utilities.Driver;
 import io.cucumber.java.en.Given;
@@ -14,10 +15,10 @@ import java.util.List;
 public class SettingsStepDefinitions {
     SettingsPage settingsPage = new SettingsPage();
     HomePage homePage = new HomePage();
+    RegistrationPage registrationPage = new RegistrationPage();
     @Given("Kullanici, kullanici adina tiklar")
     public void kullanici_kullanici_adina_tiklar() {
-        Driver.waitForClickablility(homePage.kullaniciAdi,3);
-        //homePage.kullaniciAdi.click();
+        homePage.kullaniciAdi.click();
 
     }
 
@@ -62,11 +63,13 @@ public class SettingsStepDefinitions {
     public void kullanici_dropdownd_da_sadece_Turkce_ve_Ingilizce_dil_seceneklerinin_oldugunu_dogrular() {
         Select select = new Select(settingsPage.dilDropDown);
         List<WebElement> tumSecenekler = select.getOptions();
-        for(WebElement w: tumSecenekler){
-            w.getText();
-            Assert.assertEquals(tumSecenekler,w);
-        }
 
+        for(WebElement w: tumSecenekler){
+
+            System.out.println(w.getText());
+            boolean iceriyorMu = tumSecenekler.contains(w);
+            Assert.assertTrue(iceriyorMu);
+           }
     }
 
 }
