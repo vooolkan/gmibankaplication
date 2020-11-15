@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="25.502">
-<testcase classname="Kullanici customer sayfasina gider" name="Kullanici gecerli kimlik bilgileriyle customer olusturur" time="19.108">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="15.282">
+<testcase classname="Employee hesap olusturur ve yonetir" name="TC13_manage account testi" time="12.421">
 <system-out><![CDATA[Given Kullanici login sayfasina gider.......................................passed
-And username textbox kutusuna gecerli username "Azizeke47" girer............passed
-And password textbox kutusuna gecerli password "Mardin4738." girer..........passed
+And username textbox kutusuna gecerli username "memur" girer................passed
+And password textbox kutusuna gecerli password "cucumber01." girer..........passed
 And sign in butonuna tiklayarak giris yapar.................................passed
-Then kullanici kendi username ini login kisminda gorur......................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Kullanici customer sayfasina gider" name="Employee create a new customer sayfasina gider" time="4.945">
+<testcase classname="Employee hesap olusturur ve yonetir" name="Employee customer account olusturur" time="1.735">
 <system-out><![CDATA[Given Employee My operations a tiklar.......................................passed
-And Employee Manage customera tiklar........................................passed
-And Employee Create a new customera tiklar..................................passed
-And Employee SSN textboxina tiklar ve gecerli SSN numarsini girer...........passed
-And Employee serach boxa tiklar.............................................passed
-And Employee firstname gorur................................................passed
-And Employee lastname gorur.................................................passed
-And Employee email gorur....................................................passed
+And employee Manage Accounts tiklar.........................................passed
+And employee Create a new Account a tiklar..................................passed
+And employee Description text box a "buraya hesap aciklamasi yazilmali" bilgisini girer bos birakamaz.passed
+And employee Balance text box'a dolar miktarini sadece rakam girer..........passed
+And employee Account Type secimi yapabilir..................................passed
+And employee Account Status Type secimi yapabilmelidir......................passed
+And Employee kutusundan bir calisan secebilmelidir..........................passed
+Then kullanici sign in butonuna tiklayarak Manage Account sayfasina geri doner.passed
 ]]></system-out>
 </testcase>
 </testsuite>

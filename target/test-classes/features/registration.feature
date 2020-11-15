@@ -22,6 +22,7 @@ Feature: Kullanici kayit sayfasi
     Examples:Test Verileri
      |ssn        |ad      |soyad  |adres              |cep telefon  |username  |e-mail        |password  |confirm password  |
      |567-88-3657|kul|abdullah    |deneme street 67800|055-555-5555 |kuul       |kul@gmail.com |Forkul04. |Forkul04.         |
+     |567-88-3667|kul|abdullh    |deneme street 67800|055-555-5555 |kuul       |kul@gmail.com |Forkul04. |Forkul04.         |
 
 
 
