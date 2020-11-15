@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="14.255">
-<testcase classname="Kullaci Girisi" name="TC04_GMI da kullanici login sayfasindan gecerli kimlik bilgileriyle giris yapar" time="13.581">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="63.473">
+<testcase classname="Kullaci Girisi" name="TC04_GMI da kullanici login sayfasindan gecerli kimlik bilgileriyle giris yapar" time="62.984">
 <system-out><![CDATA[Given Kullanici login sayfasina gider.......................................passed
 And username textbox kutusuna gecerli username yazar........................passed
 And password textbox kutusuna gecerli password yazar........................passed

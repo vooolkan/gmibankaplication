@@ -3,7 +3,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-11-14T21:44:53.947Z",
+        "start_timestamp": "2020-11-15T12:25:38.994Z",
         "line": 3,
         "name": "TC04_GMI da kullanici login sayfasindan gecerli kimlik bilgileriyle giris yapar",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 10930000000,
+              "duration": 60308000000,
               "status": "passed"
             },
             "line": 4,
@@ -25,7 +25,7 @@
           },
           {
             "result": {
-              "duration": 135000000,
+              "duration": 87000000,
               "status": "passed"
             },
             "line": 5,
@@ -37,7 +37,7 @@
           },
           {
             "result": {
-              "duration": 174000000,
+              "duration": 117000000,
               "status": "passed"
             },
             "line": 6,
@@ -49,7 +49,7 @@
           },
           {
             "result": {
-              "duration": 94000000,
+              "duration": 78000000,
               "status": "passed"
             },
             "line": 7,
@@ -61,7 +61,7 @@
           },
           {
             "result": {
-              "duration": 2062000000,
+              "duration": 2312000000,
               "status": "passed"
             },
             "line": 8,
@@ -83,7 +83,7 @@
     "description": "",
     "id": "kullaci-girisi",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/SignIn.feature",
+    "uri": "file:src/test/resources/features/Signin.feature",
     "tags": [
       {
         "name": "@gmibankuserlogin",
