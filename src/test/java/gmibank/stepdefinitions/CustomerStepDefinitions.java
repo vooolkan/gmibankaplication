@@ -1,12 +1,18 @@
 package gmibank.stepdefinitions;
 
 import gmibank.pages.CustomerPage;
+import gmibank.pages.RegistrationPage;
 import io.cucumber.java.en.Given;
+import jdk.internal.org.objectweb.asm.tree.TryCatchBlockNode;
+import org.codehaus.groovy.ast.expr.MapEntryExpression;
+import org.junit.Assert;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.support.ui.Wait;
 
 public class CustomerStepDefinitions {
 
     CustomerPage customerPage = new CustomerPage();
+    RegistrationPage registrationPage =new RegistrationPage();
 
 
 
@@ -47,27 +53,17 @@ public class CustomerStepDefinitions {
     }
 
     @Given("Employee serach boxa tiklar")
-    public void employee_serach_boxa_tiklar() {
+    public void employee_serach_boxa_tiklar() throws InterruptedException {
         customerPage.Searcbox.click();
+
 
     }
 
     @Given("Employee firstname gorur")
-    public void employee_firstname_gorur() {
-
-
-
-       String isim=  customerPage.firstname.getCssValue("value");
-        System.out.println(isim + " getCssValue");
-
-        String isim1=  customerPage.firstname.getText();
-        System.out.println(isim1 + " getText");
-
+    public void employee_firstname_gorur() throws InterruptedException {
+        Thread.sleep(3000);
         String isim2=  customerPage.firstname.getAttribute("value");
-        System.out.println(isim2 + " value2");
-
-
-
+        System.out.println(isim2);
 
 
 
@@ -75,6 +71,11 @@ public class CustomerStepDefinitions {
 
     @Given("Employee lastname gorur")
     public void employee_lastname_gorur() {
+        String allertSuccess = registrationPage.successAlertText.getText();
+        String errorAlert= registrationPage.errorAlerttext.getText();
+        boolean iceriyormu = allertSuccess.contains(allertSuccess);
+      Assert.assertTrue(iceriyormu);
+
 
     }
 

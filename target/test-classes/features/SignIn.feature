@@ -6,5 +6,3 @@ Feature: Kullaci Girisi
     And password textbox kutusuna gecerli password yazar
     And sign in butonuna tiklayarak giris yapar
     Then kullanici kendi username ini login kisminda gorur
-    Scenario:
-
