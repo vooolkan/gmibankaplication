@@ -3,7 +3,7 @@
     "line": 3,
     "elements": [
       {
-        "start_timestamp": "2020-11-15T18:46:16.781Z",
+        "start_timestamp": "2020-11-15T21:31:41.704Z",
         "line": 14,
         "name": "Kullanici gecerli kimlik bilgileriyle customer olusturur",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 14496000000,
+              "duration": 27058000000,
               "status": "passed"
             },
             "line": 6,
@@ -25,7 +25,7 @@
           },
           {
             "result": {
-              "duration": 387000000,
+              "duration": 180000000,
               "status": "passed"
             },
             "line": 7,
@@ -43,7 +43,7 @@
           },
           {
             "result": {
-              "duration": 319000000,
+              "duration": 187000000,
               "status": "passed"
             },
             "line": 8,
@@ -61,7 +61,7 @@
           },
           {
             "result": {
-              "duration": 229000000,
+              "duration": 124000000,
               "status": "passed"
             },
             "line": 9,
@@ -73,7 +73,7 @@
           },
           {
             "result": {
-              "duration": 2047000000,
+              "duration": 2069000000,
               "status": "passed"
             },
             "line": 10,
@@ -91,7 +91,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-11-15T18:46:34.537Z",
+        "start_timestamp": "2020-11-15T21:32:11.535Z",
         "line": 18,
         "name": "Employee create a new customer sayfasina gider",
         "description": "",
@@ -101,7 +101,7 @@
         "steps": [
           {
             "result": {
-              "duration": 374000000,
+              "duration": 126000000,
               "status": "passed"
             },
             "line": 19,
@@ -113,7 +113,7 @@
           },
           {
             "result": {
-              "duration": 246000000,
+              "duration": 135000000,
               "status": "passed"
             },
             "line": 20,
@@ -125,7 +125,7 @@
           },
           {
             "result": {
-              "duration": 540000000,
+              "duration": 260000000,
               "status": "passed"
             },
             "line": 21,
@@ -137,7 +137,7 @@
           },
           {
             "result": {
-              "duration": 1321000000,
+              "duration": 286000000,
               "status": "passed"
             },
             "line": 22,
@@ -149,7 +149,7 @@
           },
           {
             "result": {
-              "duration": 10551000000,
+              "duration": 10121000000,
               "status": "passed"
             },
             "line": 23,
@@ -161,7 +161,7 @@
           },
           {
             "result": {
-              "duration": 3101000000,
+              "duration": 3061000000,
               "status": "passed"
             },
             "line": 24,
@@ -173,7 +173,7 @@
           },
           {
             "result": {
-              "duration": 50000000,
+              "duration": 45000000,
               "status": "passed"
             },
             "line": 25,
@@ -185,7 +185,7 @@
           },
           {
             "result": {
-              "duration": 41000000,
+              "duration": 31000000,
               "status": "passed"
             },
             "line": 26,
