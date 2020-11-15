@@ -45,6 +45,14 @@ public class RegistrationPage {
     @FindBy(id = "register-submit")
     public WebElement registerButton;
 
+    @FindBy(xpath = "//div[@class='Toastify__toast Toastify__toast--success toastify-toast']")
+    public WebElement successAlertText;
+
+    @FindBy(xpath = "//div[@class='Toastify__toast Toastify__toast--error toastify-toast']")
+    public WebElement errorAlerttext;
+
+    //div[@class='Toastify__toast Toastify__toast--success toastify-toast']
+
 
 
 
