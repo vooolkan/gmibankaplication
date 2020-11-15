@@ -2,5 +2,5 @@ package gmibank.pojos;
 
 public class Registration {
 
-    //API kisminda pojo kullaniliyor
+   //asil coflict burda
 }
