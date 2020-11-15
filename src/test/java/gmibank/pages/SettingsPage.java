@@ -26,6 +26,9 @@ public class SettingsPage {
     @FindBy (xpath = "//button[@type='submit']")
     public WebElement SettingsPageKaydetButton;
 
+    @FindBy (xpath = "//div[@class='invalid-feedback']")
+    public WebElement UyariMesaji;
+
 
 
 }
