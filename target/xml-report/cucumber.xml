@@ -1,11 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="63.473">
-<testcase classname="Kullaci Girisi" name="TC04_GMI da kullanici login sayfasindan gecerli kimlik bilgileriyle giris yapar" time="62.984">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="25.497">
+<testcase classname="Kullanici customer sayfasina gider" name="Kullanici gecerli kimlik bilgileriyle customer olusturur" time="20.681">
 <system-out><![CDATA[Given Kullanici login sayfasina gider.......................................passed
-And username textbox kutusuna gecerli username yazar........................passed
-And password textbox kutusuna gecerli password yazar........................passed
+And username textbox kutusuna gecerli username "Azizeke47" girer............passed
+And password textbox kutusuna gecerli password "Mardin4738." girer..........passed
 And sign in butonuna tiklayarak giris yapar.................................passed
 Then kullanici kendi username ini login kisminda gorur......................passed
+]]></system-out>
+</testcase>
+<testcase classname="Kullanici customer sayfasina gider" name="Employee create a new customer sayfasina gider" time="3.931">
+<system-out><![CDATA[Given Employee My operations a tiklar.......................................passed
+And Employee Manage customera tiklar........................................passed
+And Employee Create a new customera tiklar..................................passed
+And Employee SSN textboxina tiklar ve gecerli SSN numarsini girer...........passed
+And Employee serach boxa tiklar.............................................passed
+And Employee firstname gorur................................................passed
+And Employee lastname gorur.................................................passed
+And Employee email gorur....................................................passed
 ]]></system-out>
 </testcase>
 </testsuite>
