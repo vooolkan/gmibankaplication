@@ -3,7 +3,11 @@ package gmibank.pojos;
 public class Registration {
 
 
-   //asil coflict master
+
+   //asil coflictremote ersin branch
+
+  
+
 
 
 
