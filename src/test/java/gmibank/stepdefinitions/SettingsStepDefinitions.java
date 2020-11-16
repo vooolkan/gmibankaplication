@@ -64,12 +64,22 @@ public class SettingsStepDefinitions {
         Select select = new Select(settingsPage.dilDropDown);
         List<WebElement> tumSecenekler = select.getOptions();
 
+        boolean flagEnglish = false;
+        boolean flagTurkce = false;
         for(WebElement w: tumSecenekler){
+           String dilDropdown= w.getText();
+            if(dilDropdown.contains("English")){
+                flagEnglish = true;
 
-            System.out.println(w.getText());
-            boolean iceriyorMu = tumSecenekler.contains(w);
-            Assert.assertTrue(iceriyorMu);
-           }
+            }
+            if (dilDropdown.contains("Türkçe"))   {
+                flagTurkce = true;
+            }
+
+            }
+
+        if (flagEnglish && flagTurkce){
+            Assert.assertTrue(true);
+        }
     }
-
 }
