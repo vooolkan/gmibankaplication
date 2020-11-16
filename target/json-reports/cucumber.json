@@ -1,30 +1,22 @@
 [
   {
-    "line": 3,
+    "line": 2,
     "elements": [
       {
-<<<<<<< HEAD
-        "start_timestamp": "2020-11-15T18:02:13.939Z",
-=======
-        "start_timestamp": "2020-11-15T21:31:41.704Z",
->>>>>>> master
-        "line": 14,
-        "name": "Kullanici gecerli kimlik bilgileriyle customer olusturur",
+        "start_timestamp": "2020-11-16T10:22:09.768Z",
+        "line": 13,
+        "name": "Kullanici gecerli kimlik bilgileriyle login olur",
         "description": "",
-        "id": "kullanici-customer-sayfasina-gider;kullanici-gecerli-kimlik-bilgileriyle-customer-olusturur;gecerli-data-girilir;2",
+        "id": "ana-sayfadaki-sifre-bolumu-duzenlenebilir-olmalidir.;kullanici-gecerli-kimlik-bilgileriyle-login-olur;gecerli-data-girilir;2",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 20187000000,
-=======
-              "duration": 27058000000,
->>>>>>> master
+              "duration": 9778000000,
               "status": "passed"
             },
-            "line": 6,
+            "line": 5,
             "name": "Kullanici login sayfasina gider",
             "match": {
               "location": "gmibank.stepdefinitions.LoginStepdefinitions.kullanici_login_sayfasina_gider()"
@@ -33,19 +25,15 @@
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 176000000,
-=======
-              "duration": 180000000,
->>>>>>> master
+              "duration": 166000000,
               "status": "passed"
             },
-            "line": 7,
-            "name": "username textbox kutusuna gecerli username \"Azizeke47\" girer",
+            "line": 6,
+            "name": "username textbox kutusuna gecerli username \"customer01\" girer",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Azizeke47\"",
+                  "val": "\"customer01\"",
                   "offset": 43
                 }
               ],
@@ -55,19 +43,15 @@
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 172000000,
-=======
-              "duration": 187000000,
->>>>>>> master
+              "duration": 252000000,
               "status": "passed"
             },
-            "line": 8,
-            "name": "password textbox kutusuna gecerli password \"Mardin4738.\" girer",
+            "line": 7,
+            "name": "password textbox kutusuna gecerli password \"3edc.%TGB:\" girer",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Mardin4738.\"",
+                  "val": "\"3edc.%TGB:\"",
                   "offset": 43
                 }
               ],
@@ -77,14 +61,10 @@
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 97000000,
-=======
-              "duration": 124000000,
->>>>>>> master
+              "duration": 143000000,
               "status": "passed"
             },
-            "line": 9,
+            "line": 8,
             "name": "sign in butonuna tiklayarak giris yapar",
             "match": {
               "location": "gmibank.stepdefinitions.LoginStepdefinitions.sign_in_butonuna_tiklayarak_giris_yapar()"
@@ -93,14 +73,10 @@
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 2056000000,
-=======
-              "duration": 2069000000,
->>>>>>> master
+              "duration": 2085000000,
               "status": "passed"
             },
-            "line": 10,
+            "line": 9,
             "name": "kullanici kendi username ini login kisminda gorur",
             "match": {
               "location": "gmibank.stepdefinitions.LoginStepdefinitions.kullanici_kendi_username_ini_login_kisminda_gorur()"
@@ -110,173 +86,702 @@
         ],
         "tags": [
           {
-            "name": "@customer"
+            "name": "@PasswordPage"
           }
         ]
       },
       {
-<<<<<<< HEAD
-        "start_timestamp": "2020-11-15T18:02:36.818Z",
-=======
-        "start_timestamp": "2020-11-15T21:32:11.535Z",
->>>>>>> master
-        "line": 18,
-        "name": "Employee create a new customer sayfasina gider",
+        "start_timestamp": "2020-11-16T10:22:22.380Z",
+        "line": 16,
+        "name": "Kullanici ayarlar sayfasina gider",
         "description": "",
-        "id": "kullanici-customer-sayfasina-gider;employee-create-a-new-customer-sayfasina-gider",
+        "id": "ana-sayfadaki-sifre-bolumu-duzenlenebilir-olmalidir.;kullanici-ayarlar-sayfasina-gider",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 135000000,
-=======
-              "duration": 126000000,
->>>>>>> master
+              "duration": 182000000,
               "status": "passed"
             },
-            "line": 19,
-            "name": "Employee My operations a tiklar",
+            "line": 17,
+            "name": "Kullanici, kullanici adina tiklar",
             "match": {
-              "location": "gmibank.stepdefinitions.CustomerStepDefinitions.employee_My_operations_a_tiklar()"
+              "location": "gmibank.stepdefinitions.SettingsStepDefinitions.kullanici_kullanici_adina_tiklar()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 140000000,
-=======
-              "duration": 135000000,
->>>>>>> master
+              "duration": 250000000,
               "status": "passed"
             },
-            "line": 20,
-            "name": "Employee Manage customera tiklar",
+            "line": 18,
+            "name": "Kullanici password sekmesine tiklar",
             "match": {
-              "location": "gmibank.stepdefinitions.CustomerStepDefinitions.employee_Manage_customera_tiklar()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-<<<<<<< HEAD
-              "duration": 239000000,
-=======
-              "duration": 260000000,
->>>>>>> master
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "Employee Create a new customera tiklar",
-            "match": {
-              "location": "gmibank.stepdefinitions.CustomerStepDefinitions.employee_Create_a_new_customera_tiklar()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-<<<<<<< HEAD
-              "duration": 3326000000,
-=======
-              "duration": 286000000,
->>>>>>> master
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "Employee SSN textboxina tiklar ve gecerli SSN numarsini girer",
-            "match": {
-              "location": "gmibank.stepdefinitions.CustomerStepDefinitions.employee_SSN_textboxina_tiklar_ve_gecerli_SSN_numarsini_girer()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-<<<<<<< HEAD
-              "duration": 134000000,
-=======
-              "duration": 10121000000,
->>>>>>> master
-              "status": "passed"
-            },
-            "line": 23,
-            "name": "Employee serach boxa tiklar",
-            "match": {
-              "location": "gmibank.stepdefinitions.CustomerStepDefinitions.employee_serach_boxa_tiklar()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-<<<<<<< HEAD
-              "duration": 3069000000,
-=======
-              "duration": 3061000000,
->>>>>>> master
-              "status": "passed"
-            },
-            "line": 24,
-            "name": "Employee firstname gorur",
-            "match": {
-              "location": "gmibank.stepdefinitions.CustomerStepDefinitions.employee_firstname_gorur()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-<<<<<<< HEAD
-              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@class\u003d\u0027Toastify__toast Toastify__toast--error toastify-toast\u0027]\"}\n  (Session info: chrome\u003d86.0.4240.193)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027LAPTOP-M9ST69D5\u0027, ip: \u0027192.168.0.2\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_241\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.193, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\\Users\\adily\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63852}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 1ebaa2d87036e322a334307f0624c2cf\n*** Element info: {Using\u003dxpath, value\u003d//div[@class\u003d\u0027Toastify__toast Toastify__toast--error toastify-toast\u0027]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy14.getText(Unknown Source)\r\n\tat gmibank.stepdefinitions.CustomerStepDefinitions.employee_lastname_gorur(CustomerStepDefinitions.java:75)\r\n\tat ✽.Employee lastname gorur(file:///C:/Users/adily/IdeaProjects/gmibankaplication/src/test/resources/features/customer.feature:25)\r\n",
-              "duration": 10152000000,
-              "status": "failed"
-=======
-              "duration": 45000000,
-              "status": "passed"
->>>>>>> master
-            },
-            "line": 25,
-            "name": "Employee lastname gorur",
-            "match": {
-              "location": "gmibank.stepdefinitions.CustomerStepDefinitions.employee_lastname_gorur()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-<<<<<<< HEAD
-              "duration": 1000000,
-              "status": "skipped"
-=======
-              "duration": 31000000,
-              "status": "passed"
->>>>>>> master
-            },
-            "line": 26,
-            "name": "Employee email gorur",
-            "match": {
-              "location": "gmibank.stepdefinitions.CustomerStepDefinitions.employee_email_gorur()"
+              "location": "gmibank.stepdefinitions.PasswordStepDefinitions.kullanici_password_sekmesine_tiklar()"
             },
             "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@customer"
+            "name": "@PasswordPage"
           },
           {
-            "name": "@managecustomer"
+            "name": "@US_8_0"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-16T10:22:22.834Z",
+        "line": 21,
+        "name": "Kullanici mevcut passwordu degistirmek istediginde mevcut passwordu,yeni password olarak kullanamaz.",
+        "description": "",
+        "id": "ana-sayfadaki-sifre-bolumu-duzenlenebilir-olmalidir.;kullanici-mevcut-passwordu-degistirmek-istediginde-mevcut-passwordu-yeni-password-olarak-kullanamaz.",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 791000000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Kullanici Mevcut sifre \"\u003c3edc.%TGB:\u003e\", Yeni sifre ve Yeni sifre tekrar textboxlarinin hepsine mevcut sifreyi yazar",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003c3edc.%TGB:\u003e\"",
+                  "offset": 23
+                }
+              ],
+              "location": "gmibank.stepdefinitions.PasswordStepDefinitions.kullanici_Mevcut_sifre_Yeni_sifre_ve_Yeni_sifre_tekrar_textboxlarinin_hepsine_mevcut_sifreyi_yazar(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 125000000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Kullanici Kaydet butonuna tiklar",
+            "match": {
+              "location": "gmibank.stepdefinitions.PasswordStepDefinitions.kullanici_Kaydet_butonuna_tiklar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[.\u003d\u0027Şifre değiştirildi!\u0027]\"}\n  (Session info: chrome\u003d86.0.4240.193)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027LAPTOP-9KDP0QC2\u0027, ip: \u0027192.168.0.198\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_251\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.193, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\\Users\\ersn1\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59295}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 24a832c3b6cdd437814d35ee5649310e\n*** Element info: {Using\u003dxpath, value\u003d//*[.\u003d\u0027Şifre değiştirildi!\u0027]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy14.getText(Unknown Source)\r\n\tat gmibank.stepdefinitions.PasswordStepDefinitions.kullanici_mevcut_passwordun_yeni_password_olarak_kullanilamadigini_dogrular(PasswordStepDefinitions.java:32)\r\n\tat ✽.Kullanici mevcut passwordun yeni password olarak kullanilamadigini dogrular(file:///C:/Users/ersn1/IdeaProjects/gmibankaplication/src/test/resources/features/password.feature:24)\r\n",
+              "duration": 10071000000,
+              "status": "failed"
+            },
+            "line": 24,
+            "name": "Kullanici mevcut passwordun yeni password olarak kullanilamadigini dogrular",
+            "match": {
+              "location": "gmibank.stepdefinitions.PasswordStepDefinitions.kullanici_mevcut_passwordun_yeni_password_olarak_kullanilamadigini_dogrular()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@PasswordPage"
+          },
+          {
+            "name": "@US_8_1"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-16T10:22:33.857Z",
+        "line": 27,
+        "name": "Kullanici yeni passwordde kucuk harf kullandiginda seviye grafigi degisir.",
+        "description": "",
+        "id": "ana-sayfadaki-sifre-bolumu-duzenlenebilir-olmalidir.;kullanici-yeni-passwordde-kucuk-harf-kullandiginda-seviye-grafigi-degisir.",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 236000000,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "Kullanici Mevcut sifre \"\u003c3edc.%TGB:\u003e\" textboxina mevcut sifreyi girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003c3edc.%TGB:\u003e\"",
+                  "offset": 23
+                }
+              ],
+              "location": "gmibank.stepdefinitions.PasswordStepDefinitions.kullanici_Mevcut_sifre_textboxina_mevcut_sifreyi_girer(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 233000000,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "Kullanici Yeni sifre textboxina icinde kucuk harf olmayan alti haneli \"\u003c2!58.G\u003e\" password girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003c2!58.G\u003e\"",
+                  "offset": 70
+                }
+              ],
+              "location": "gmibank.stepdefinitions.PasswordStepDefinitions.kullanici_Yeni_sifre_textboxina_icinde_kucuk_harf_olmayan_alti_haneli_password_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//li[@style\u003d\u0027background-color: rgb(255, 0, 0);\u0027]\"}\n  (Session info: chrome\u003d86.0.4240.193)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027LAPTOP-9KDP0QC2\u0027, ip: \u0027192.168.0.198\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_251\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.193, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\\Users\\ersn1\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59295}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 24a832c3b6cdd437814d35ee5649310e\n*** Element info: {Using\u003dxpath, value\u003d//li[@style\u003d\u0027background-color: rgb(255, 0, 0);\u0027]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy14.getCssValue(Unknown Source)\r\n\tat gmibank.stepdefinitions.PasswordStepDefinitions.kullanici_seviye_grafigini_kontrol_eder(PasswordStepDefinitions.java:52)\r\n\tat ✽.Kullanici seviye grafigini kontrol eder(file:///C:/Users/ersn1/IdeaProjects/gmibankaplication/src/test/resources/features/password.feature:30)\r\n",
+              "duration": 10046000000,
+              "status": "failed"
+            },
+            "line": 30,
+            "name": "Kullanici seviye grafigini kontrol eder",
+            "match": {
+              "location": "gmibank.stepdefinitions.PasswordStepDefinitions.kullanici_seviye_grafigini_kontrol_eder()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 31,
+            "name": "Kullanici alti haneli passworde yedinci hane olarak herhangi bir kucuk harf \"\u003ca\u003e\" ekler",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003ca\u003e\"",
+                  "offset": 76
+                }
+              ],
+              "location": "gmibank.stepdefinitions.PasswordStepDefinitions.kullanici_alti_haneli_passworde_yedinci_hane_olarak_herhangi_bir_kucuk_harf_ekler(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 32,
+            "name": "Kullanici seviye grafiginde degisim oldugunu dogrular",
+            "match": {
+              "location": "gmibank.stepdefinitions.PasswordStepDefinitions.kullanici_seviye_grafiginde_degisim_oldugunu_dogrular()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@PasswordPage"
+          },
+          {
+            "name": "@US_8_2"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-16T10:22:44.398Z",
+        "line": 35,
+        "name": "Kullanici yeni passwordde buyuk harf kullandiginda seviye grafigi degisir.",
+        "description": "",
+        "id": "ana-sayfadaki-sifre-bolumu-duzenlenebilir-olmalidir.;kullanici-yeni-passwordde-buyuk-harf-kullandiginda-seviye-grafigi-degisir.",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 251000000,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "Kullanici Mevcut sifre \"\u003c3edc.%TGB:\u003e\" textboxina mevcut sifreyi girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003c3edc.%TGB:\u003e\"",
+                  "offset": 23
+                }
+              ],
+              "location": "gmibank.stepdefinitions.PasswordStepDefinitions.kullanici_Mevcut_sifre_textboxina_mevcut_sifreyi_girer(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "Kullanici Yeni sifre textboxina icinde buyuk harf olmayan alti haneli password \"\u003c2!58.g\u003e\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003c2!58.g\u003e\"",
+                  "offset": 79
+                }
+              ],
+              "location": "gmibank.stepdefinitions.PasswordStepDefinitions.kullanici_Yeni_sifre_textboxina_icinde_buyuk_harf_olmayan_alti_haneli_password_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//li[@style\u003d\u0027background-color: rgb(255, 0, 0);\u0027]\"}\n  (Session info: chrome\u003d86.0.4240.193)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027LAPTOP-9KDP0QC2\u0027, ip: \u0027192.168.0.198\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_251\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.193, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\\Users\\ersn1\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59295}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 24a832c3b6cdd437814d35ee5649310e\n*** Element info: {Using\u003dxpath, value\u003d//li[@style\u003d\u0027background-color: rgb(255, 0, 0);\u0027]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy14.getCssValue(Unknown Source)\r\n\tat gmibank.stepdefinitions.PasswordStepDefinitions.kullanici_seviye_grafigini_kontrol_eder(PasswordStepDefinitions.java:52)\r\n\tat ✽.Kullanici seviye grafigini kontrol eder(file:///C:/Users/ersn1/IdeaProjects/gmibankaplication/src/test/resources/features/password.feature:38)\r\n",
+              "duration": 10060000000,
+              "status": "failed"
+            },
+            "line": 38,
+            "name": "Kullanici seviye grafigini kontrol eder",
+            "match": {
+              "location": "gmibank.stepdefinitions.PasswordStepDefinitions.kullanici_seviye_grafigini_kontrol_eder()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 39,
+            "name": "Kullanici alti haneli passworde yedinci hane olarak herhangi bir büyük harf \"\u003cA\u003e\" ekler",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003cA\u003e\"",
+                  "offset": 76
+                }
+              ],
+              "location": "gmibank.stepdefinitions.PasswordStepDefinitions.kullanici_alti_haneli_passworde_yedinci_hane_olarak_herhangi_bir_büyük_harf_ekler(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 40,
+            "name": "Kullanici seviye grafiginde degisim oldugunu dogrular",
+            "match": {
+              "location": "gmibank.stepdefinitions.PasswordStepDefinitions.kullanici_seviye_grafiginde_degisim_oldugunu_dogrular()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@PasswordPage"
+          },
+          {
+            "name": "@US_8_3"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-16T10:22:54.728Z",
+        "line": 43,
+        "name": "Kullanici yeni passwordde rakam kullandiginda seviye grafigi degisir.",
+        "description": "",
+        "id": "ana-sayfadaki-sifre-bolumu-duzenlenebilir-olmalidir.;kullanici-yeni-passwordde-rakam-kullandiginda-seviye-grafigi-degisir.",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 182000000,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "Kullanici Mevcut sifre \"\u003c3edc.%TGB:\u003e\" textboxina mevcut sifreyi girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003c3edc.%TGB:\u003e\"",
+                  "offset": 23
+                }
+              ],
+              "location": "gmibank.stepdefinitions.PasswordStepDefinitions.kullanici_Mevcut_sifre_textboxina_mevcut_sifreyi_girer(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "Kullanici Yeni sifre textboxina icinde rakam olmayan alti haneli password \"\u003ck!mX.g\u003e\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003ck!mX.g\u003e\"",
+                  "offset": 74
+                }
+              ],
+              "location": "gmibank.stepdefinitions.PasswordStepDefinitions.kullanici_Yeni_sifre_textboxina_icinde_rakam_olmayan_alti_haneli_password_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//li[@style\u003d\u0027background-color: rgb(255, 0, 0);\u0027]\"}\n  (Session info: chrome\u003d86.0.4240.193)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027LAPTOP-9KDP0QC2\u0027, ip: \u0027192.168.0.198\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_251\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.193, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\\Users\\ersn1\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59295}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 24a832c3b6cdd437814d35ee5649310e\n*** Element info: {Using\u003dxpath, value\u003d//li[@style\u003d\u0027background-color: rgb(255, 0, 0);\u0027]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy14.getCssValue(Unknown Source)\r\n\tat gmibank.stepdefinitions.PasswordStepDefinitions.kullanici_seviye_grafigini_kontrol_eder(PasswordStepDefinitions.java:52)\r\n\tat ✽.Kullanici seviye grafigini kontrol eder(file:///C:/Users/ersn1/IdeaProjects/gmibankaplication/src/test/resources/features/password.feature:46)\r\n",
+              "duration": 10018000000,
+              "status": "failed"
+            },
+            "line": 46,
+            "name": "Kullanici seviye grafigini kontrol eder",
+            "match": {
+              "location": "gmibank.stepdefinitions.PasswordStepDefinitions.kullanici_seviye_grafigini_kontrol_eder()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "skipped"
+            },
+            "line": 47,
+            "name": "Kullanici alti haneli passworde yedinci hane olarak herhangi bir rakam \"\u003c5\u003e\" ekler",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003c5\u003e\"",
+                  "offset": 71
+                }
+              ],
+              "location": "gmibank.stepdefinitions.PasswordStepDefinitions.kullanici_alti_haneli_passworde_yedinci_hane_olarak_herhangi_bir_rakam_ekler(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 48,
+            "name": "Kullanici seviye grafiginde degisim oldugunu dogrular",
+            "match": {
+              "location": "gmibank.stepdefinitions.PasswordStepDefinitions.kullanici_seviye_grafiginde_degisim_oldugunu_dogrular()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@PasswordPage"
+          },
+          {
+            "name": "@US_8_4"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-16T10:23:04.948Z",
+        "line": 51,
+        "name": "Kullanici yeni passwordde ozel karakter kullandiginda seviye grafigi degisir.",
+        "description": "",
+        "id": "ana-sayfadaki-sifre-bolumu-duzenlenebilir-olmalidir.;kullanici-yeni-passwordde-ozel-karakter-kullandiginda-seviye-grafigi-degisir.",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 181000000,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "Kullanici Mevcut sifre \"\u003c3edc.%TGB:\u003e\" textboxina mevcut sifreyi girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003c3edc.%TGB:\u003e\"",
+                  "offset": 23
+                }
+              ],
+              "location": "gmibank.stepdefinitions.PasswordStepDefinitions.kullanici_Mevcut_sifre_textboxina_mevcut_sifreyi_girer(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "Kullanici Yeni sifre textboxina icinde ozel karakter olmayan alti haneli bir \"\u003ck7mX2g\u003e\" password girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003ck7mX2g\u003e\"",
+                  "offset": 77
+                }
+              ],
+              "location": "gmibank.stepdefinitions.PasswordStepDefinitions.kullanici_Yeni_sifre_textboxina_icinde_ozel_karakter_olmayan_alti_haneli_bir_password_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//li[@style\u003d\u0027background-color: rgb(255, 0, 0);\u0027]\"}\n  (Session info: chrome\u003d86.0.4240.193)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027LAPTOP-9KDP0QC2\u0027, ip: \u0027192.168.0.198\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_251\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.193, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\\Users\\ersn1\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59295}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 24a832c3b6cdd437814d35ee5649310e\n*** Element info: {Using\u003dxpath, value\u003d//li[@style\u003d\u0027background-color: rgb(255, 0, 0);\u0027]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy14.getCssValue(Unknown Source)\r\n\tat gmibank.stepdefinitions.PasswordStepDefinitions.kullanici_seviye_grafigini_kontrol_eder(PasswordStepDefinitions.java:52)\r\n\tat ✽.Kullanici seviye grafigini kontrol eder(file:///C:/Users/ersn1/IdeaProjects/gmibankaplication/src/test/resources/features/password.feature:54)\r\n",
+              "duration": 10045000000,
+              "status": "failed"
+            },
+            "line": 54,
+            "name": "Kullanici seviye grafigini kontrol eder",
+            "match": {
+              "location": "gmibank.stepdefinitions.PasswordStepDefinitions.kullanici_seviye_grafigini_kontrol_eder()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 55,
+            "name": "Kullanici alti haneli passworde yedinci hane olarak herhangi bir ozel karakter \"\u003c!\u003e\" ekler",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003c!\u003e\"",
+                  "offset": 79
+                }
+              ],
+              "location": "gmibank.stepdefinitions.PasswordStepDefinitions.kullanici_alti_haneli_passworde_yedinci_hane_olarak_herhangi_bir_ozel_karakter_ekler(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 56,
+            "name": "Kullanici seviye grafiginde degisim oldugunu dogrular",
+            "match": {
+              "location": "gmibank.stepdefinitions.PasswordStepDefinitions.kullanici_seviye_grafiginde_degisim_oldugunu_dogrular()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@PasswordPage"
+          },
+          {
+            "name": "@US_8_5"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-16T10:23:15.192Z",
+        "line": 59,
+        "name": "Kullanici yeni passwordde 7 karakter kullandiginda seviye grafigi degisir.",
+        "description": "",
+        "id": "ana-sayfadaki-sifre-bolumu-duzenlenebilir-olmalidir.;kullanici-yeni-passwordde-7-karakter-kullandiginda-seviye-grafigi-degisir.",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 188000000,
+              "status": "passed"
+            },
+            "line": 60,
+            "name": "Kullanici Mevcut sifre \"\u003c3edc.%TGB:\u003e\" textboxina mevcut sifreyi girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003c3edc.%TGB:\u003e\"",
+                  "offset": 23
+                }
+              ],
+              "location": "gmibank.stepdefinitions.PasswordStepDefinitions.kullanici_Mevcut_sifre_textboxina_mevcut_sifreyi_girer(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 61,
+            "name": "Kullanici Yeni sifre textboxina alti haneli bir password \"\u003c4r6AY.\u003e\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003c4r6AY.\u003e\"",
+                  "offset": 57
+                }
+              ],
+              "location": "gmibank.stepdefinitions.PasswordStepDefinitions.kullanici_Yeni_sifre_textboxina_alti_haneli_bir_password_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//li[@style\u003d\u0027background-color: rgb(255, 0, 0);\u0027]\"}\n  (Session info: chrome\u003d86.0.4240.193)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027LAPTOP-9KDP0QC2\u0027, ip: \u0027192.168.0.198\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_251\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.193, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\\Users\\ersn1\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59295}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 24a832c3b6cdd437814d35ee5649310e\n*** Element info: {Using\u003dxpath, value\u003d//li[@style\u003d\u0027background-color: rgb(255, 0, 0);\u0027]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy14.getCssValue(Unknown Source)\r\n\tat gmibank.stepdefinitions.PasswordStepDefinitions.kullanici_seviye_grafigini_kontrol_eder(PasswordStepDefinitions.java:52)\r\n\tat ✽.Kullanici seviye grafigini kontrol eder(file:///C:/Users/ersn1/IdeaProjects/gmibankaplication/src/test/resources/features/password.feature:62)\r\n",
+              "duration": 10026000000,
+              "status": "failed"
+            },
+            "line": 62,
+            "name": "Kullanici seviye grafigini kontrol eder",
+            "match": {
+              "location": "gmibank.stepdefinitions.PasswordStepDefinitions.kullanici_seviye_grafigini_kontrol_eder()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 63,
+            "name": "Kullanici Yeni sifre textboxina yedi haneli password \"\u003c4r6AY.a\u003e\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003c4r6AY.a\u003e\"",
+                  "offset": 53
+                }
+              ],
+              "location": "gmibank.stepdefinitions.PasswordStepDefinitions.kullanici_Yeni_sifre_textboxina_yedi_haneli_password_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 64,
+            "name": "Kullanici seviye grafiginde degisim oldugunu dogrular",
+            "match": {
+              "location": "gmibank.stepdefinitions.PasswordStepDefinitions.kullanici_seviye_grafiginde_degisim_oldugunu_dogrular()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@PasswordPage"
+          },
+          {
+            "name": "@US_8_6"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-16T10:23:25.426Z",
+        "line": 67,
+        "name": "Kullanici password basarili bir sekilde degistirir.",
+        "description": "",
+        "id": "ana-sayfadaki-sifre-bolumu-duzenlenebilir-olmalidir.;kullanici-password-basarili-bir-sekilde-degistirir.",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 190000000,
+              "status": "passed"
+            },
+            "line": 68,
+            "name": "Kullanici Mevcut sifre \"\u003c3edc.%TGB:\u003e\" textboxina mevcut sifreyi girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003c3edc.%TGB:\u003e\"",
+                  "offset": 23
+                }
+              ],
+              "location": "gmibank.stepdefinitions.PasswordStepDefinitions.kullanici_Mevcut_sifre_textboxina_mevcut_sifreyi_girer(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 69,
+            "name": "Kullanici Yeni sifre textboxina gecerli passwordu \"\u003c4rfv.1QAY.\u003e\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003c4rfv.1QAY.\u003e\"",
+                  "offset": 50
+                }
+              ],
+              "location": "gmibank.stepdefinitions.PasswordStepDefinitions.kullanici_Yeni_sifre_textboxina_gecerli_passwordu_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 70,
+            "name": "Kullanici Yeni Sifre Tekrar textboxina gecerli passwordu \"\u003c4rfv.1QAY.\u003e\" tekrar girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003c4rfv.1QAY.\u003e\"",
+                  "offset": 57
+                }
+              ],
+              "location": "gmibank.stepdefinitions.PasswordStepDefinitions.kullanici_Yeni_Sifre_Tekrar_textboxina_gecerli_passwordu_tekrar_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 114000000,
+              "status": "passed"
+            },
+            "line": 71,
+            "name": "Kullanici Kaydet butonuna tiklar",
+            "match": {
+              "location": "gmibank.stepdefinitions.PasswordStepDefinitions.kullanici_Kaydet_butonuna_tiklar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 72,
+            "name": "Kullanici mevcut passwordun basarili bir sekilde degistigini dogrular",
+            "match": {
+              "location": "gmibank.stepdefinitions.PasswordStepDefinitions.kullanici_mevcut_passwordun_basarili_bir_sekilde_degistigini_dogrular()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@PasswordPage"
+          },
+          {
+            "name": "@US_8_7"
           }
         ]
       }
     ],
-    "name": "Kullanici customer sayfasina gider",
+    "name": "Ana sayfadaki sifre bolumu duzenlenebilir olmalidir.",
     "description": "",
-    "id": "kullanici-customer-sayfasina-gider",
+    "id": "ana-sayfadaki-sifre-bolumu-duzenlenebilir-olmalidir.",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/customer.feature",
+    "uri": "file:src/test/resources/features/password.feature",
     "tags": [
       {
-        "name": "@customer",
+        "name": "@PasswordPage",
         "type": "Tag",
         "location": {
           "line": 1,
