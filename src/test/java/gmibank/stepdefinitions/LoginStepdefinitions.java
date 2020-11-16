@@ -1,5 +1,6 @@
 package gmibank.stepdefinitions;
 
+import com.github.javafaker.Faker;
 import gmibank.pages.SignInPage;
 import gmibank.utilities.ConfigurationReader;
 import gmibank.utilities.Driver;
@@ -9,6 +10,7 @@ import org.junit.Assert;
 
 public class LoginStepdefinitions {
     SignInPage signInPage = new SignInPage();
+    Faker faker = new Faker();
 
     @Given("Kullanici login sayfasina gider")
     public void kullanici_login_sayfasina_gider() {

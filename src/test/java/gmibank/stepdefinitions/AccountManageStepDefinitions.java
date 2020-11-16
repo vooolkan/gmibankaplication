@@ -1,5 +1,6 @@
 package gmibank.stepdefinitions;
 
+
 import com.github.javafaker.Faker;
 import gmibank.pages.AccountManagePage;
 import gmibank.utilities.Driver;
@@ -101,5 +102,7 @@ public class AccountManageStepDefinitions {
     public void kullanici_sign_in_butonuna_tiklayarak_Manage_Account_sayfasina_geri_doner() {
 
     }
+
+
 
 }

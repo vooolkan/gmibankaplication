@@ -1,12 +1,21 @@
 package gmibank.stepdefinitions;
 
 import gmibank.pages.CustomerPage;
+import gmibank.pages.RegistrationPage;
 import io.cucumber.java.en.Given;
+
+import jdk.internal.org.objectweb.asm.tree.TryCatchBlockNode;
+import org.codehaus.groovy.ast.expr.MapEntryExpression;
+import org.junit.Assert;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.support.ui.Wait;
+
+
 
 public class CustomerStepDefinitions {
 
     CustomerPage customerPage = new CustomerPage();
+    RegistrationPage registrationPage =new RegistrationPage();
 
 
 
@@ -41,45 +50,46 @@ public class CustomerStepDefinitions {
 
     @Given("Employee SSN textboxina tiklar ve gecerli SSN numarsini girer")
     public void employee_SSN_textboxina_tiklar_ve_gecerli_SSN_numarsini_girer() throws InterruptedException {
-        customerPage.SSNTextbox.sendKeys("108-22-1905"+ Keys.ENTER);
-        Thread.sleep(3000);
+        customerPage.SSNTextbox.sendKeys("108-22-1905");
+
 
     }
 
     @Given("Employee serach boxa tiklar")
-    public void employee_serach_boxa_tiklar() {
+    public void employee_serach_boxa_tiklar() throws InterruptedException {
         customerPage.Searcbox.click();
-
-    }
-
-    @Given("Employee firstname gorur")
-    public void employee_firstname_gorur() {
-
-
-
-       String isim=  customerPage.firstname.getCssValue("value");
-        System.out.println(isim + " getCssValue");
-
-        String isim1=  customerPage.firstname.getText();
-        System.out.println(isim1 + " getText");
-
-        String isim2=  customerPage.firstname.getAttribute("value");
-        System.out.println(isim2 + " value2");
-
-
-
-
+        Thread.sleep(10000);
 
 
     }
 
-    @Given("Employee lastname gorur")
-    public void employee_lastname_gorur() {
+
+
+
+
+//    @Given("Employee firstname gorur")
+//    public void employee_firstname_gorur() {
+//        String isim= "Aziz";
+//        Assert.assertEquals(isim,customerPage.firstname.getText());
+
+
+        @Given("Employee firstname gorur")
+        public void employee_firstname_gorur() throws InterruptedException {
+            Thread.sleep(3000);
+            String isim2=  customerPage.firstname.getAttribute("value");
+            System.out.println(isim2);
 
     }
+
+
+
+
 
     @Given("Employee email gorur")
     public void employee_email_gorur() {
+
+        String email2 = customerPage.Email.getAttribute("value");
+        System.out.println(email2);
 
     }
 
