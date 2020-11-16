@@ -14,7 +14,7 @@ import org.junit.runner.RunWith;
 
 
 
-        tags = "@PasswordPage",
+        tags = "@US_03",
 
         dryRun = false
         //true
