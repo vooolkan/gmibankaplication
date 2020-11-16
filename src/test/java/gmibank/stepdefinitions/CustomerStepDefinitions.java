@@ -1,11 +1,15 @@
 package gmibank.stepdefinitions;
 
 import gmibank.pages.CustomerPage;
+import gmibank.pages.RegistrationPage;
 import io.cucumber.java.en.Given;
+
+
 
 public class CustomerStepDefinitions {
 
     CustomerPage customerPage = new CustomerPage();
+    RegistrationPage registrationPage =new RegistrationPage();
 
 
 
@@ -50,12 +54,8 @@ public class CustomerStepDefinitions {
         customerPage.Searcbox.click();
         Thread.sleep(10000);
 
-    }
 
-//    @Given("Employee firstname gorur")
-//    public void employee_firstname_gorur() {
-//        String isim= "Aziz";
-//        Assert.assertEquals(isim,customerPage.firstname.getText());
+    }
 
         @Given("Employee firstname gorur")
         public void employee_firstname_gorur() throws InterruptedException {
@@ -65,14 +65,16 @@ public class CustomerStepDefinitions {
 
     }
 
+
     @Given("Employee lastname gorur")
     public void employee_lastname_gorur() {
-
-        String soyisim2= customerPage.lastname.getAttribute("value");
-        System.out.println(soyisim2);
-
-
+        String soyisim= customerPage.lastname.getAttribute("value");
+        System.out.println(soyisim);
     }
+
+
+
+
 
     @Given("Employee email gorur")
     public void employee_email_gorur() {
