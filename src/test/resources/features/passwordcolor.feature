@@ -43,9 +43,7 @@ Feature: Kayıt sayfası, parola kullanımını güvenli ve yüksek düzeyli bir
     And Şifre onayı metin kutusuna tıklayın
     And ikinci kismada Yedi karakterli bir şifre girin
 
-    @Test1
-    Scenario: atribuite
-      And dogrulama
+
 
 
 

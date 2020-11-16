@@ -1,282 +1,636 @@
 [
   {
-    "line": 3,
+    "line": 2,
     "elements": [
       {
-<<<<<<< HEAD
-        "start_timestamp": "2020-11-15T18:02:13.939Z",
-=======
-        "start_timestamp": "2020-11-15T21:31:41.704Z",
->>>>>>> master
-        "line": 14,
-        "name": "Kullanici gecerli kimlik bilgileriyle customer olusturur",
+        "line": 4,
+        "name": "Kullanıcı GMi Bank ana sayfasına gider (https://gmibank.com/)",
         "description": "",
-        "id": "kullanici-customer-sayfasina-gider;kullanici-gecerli-kimlik-bilgileriyle-customer-olusturur;gecerli-data-girilir;2",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
+        "type": "background",
+        "keyword": "Background",
         "steps": [
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 20187000000,
-=======
-              "duration": 27058000000,
->>>>>>> master
+              "duration": 19935000000,
               "status": "passed"
             },
-            "line": 6,
-            "name": "Kullanici login sayfasina gider",
+            "line": 5,
+            "name": "Kullanıcı GMi Bank ana sayfasına gider",
             "match": {
-              "location": "gmibank.stepdefinitions.LoginStepdefinitions.kullanici_login_sayfasina_gider()"
+              "location": "gmibank.stepdefinitions.Password_Step_Definitions.kullanıcı_GMi_Bank_ana_sayfasına_gider()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 176000000,
-=======
-              "duration": 180000000,
->>>>>>> master
+              "duration": 212000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "kullanıcı düğmesine tıklayın",
+            "match": {
+              "location": "gmibank.stepdefinitions.Password_Step_Definitions.kullanıcı_düğmesine_tıklayın()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 278000000,
               "status": "passed"
             },
             "line": 7,
-            "name": "username textbox kutusuna gecerli username \"Azizeke47\" girer",
+            "name": "Kayıt sayfasına gitmelisiniz",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"Azizeke47\"",
-                  "offset": 43
-                }
-              ],
-              "location": "gmibank.stepdefinitions.CustomerStepDefinitions.username_textbox_kutusuna_gecerli_username_girer(java.lang.String)"
+              "location": "gmibank.stepdefinitions.Password_Step_Definitions.kayıt_sayfasına_gitmelisiniz()"
             },
             "keyword": "And "
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 172000000,
-=======
-              "duration": 187000000,
->>>>>>> master
+              "duration": 314000000,
               "status": "passed"
             },
             "line": 8,
-            "name": "password textbox kutusuna gecerli password \"Mardin4738.\" girer",
+            "name": "Şifre metin kutusuna tıklayın",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"Mardin4738.\"",
-                  "offset": 43
-                }
-              ],
-              "location": "gmibank.stepdefinitions.CustomerStepDefinitions.password_textbox_kutusuna_gecerli_password_girer(java.lang.String)"
+              "location": "gmibank.stepdefinitions.Password_Step_Definitions.şifre_metin_kutusuna_tıklayın()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-15T22:52:55.052Z",
+        "line": 12,
+        "name": "Daha güçlü parola için en az bir küçük harf olmalıdır ve buna göre seviye grafiğinin değiştiğini görün",
+        "description": "",
+        "id": "kayıt-sayfası--parola-kullanımını-güvenli-ve-yüksek-düzeyli-bir-parola-ile-sınırlamalıdır;daha-güçlü-parola-için-en-az-bir-küçük-harf-olmalıdır-ve-buna-göre-seviye-grafiğinin-değiştiğini-görün",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 751000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "En az dort karakterden oluşan bir kücük harf iceren bir şifre girin",
+            "match": {
+              "location": "gmibank.stepdefinitions.Password_Step_Definitions.en_az_dort_karakterden_oluşan_bir_kücük_harf_iceren_bir_şifre_girin()"
             },
             "keyword": "And "
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 97000000,
-=======
-              "duration": 124000000,
->>>>>>> master
+              "duration": 36000000,
               "status": "passed"
             },
-            "line": 9,
-            "name": "sign in butonuna tiklayarak giris yapar",
+            "line": 14,
+            "name": "Renkli cizgi turuncu veya yeşil olmalıdır",
             "match": {
-              "location": "gmibank.stepdefinitions.LoginStepdefinitions.sign_in_butonuna_tiklayarak_giris_yapar()"
+              "location": "gmibank.stepdefinitions.Password_Step_Definitions.renkli_cizgi_turuncu_veya_yeşil_olmalıdır()"
             },
             "keyword": "And "
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 2056000000,
-=======
-              "duration": 2069000000,
->>>>>>> master
+              "duration": 215000000,
               "status": "passed"
             },
-            "line": 10,
-            "name": "kullanici kendi username ini login kisminda gorur",
+            "line": 15,
+            "name": "Şifre onayı metin kutusuna tıklayın",
             "match": {
-              "location": "gmibank.stepdefinitions.LoginStepdefinitions.kullanici_kendi_username_ini_login_kisminda_gorur()"
+              "location": "gmibank.stepdefinitions.Password_Step_Definitions.şifre_onayı_metin_kutusuna_tıklayın()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 319000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "En az dört karakterden oluşan bir kücük harf iceren bir şifre girin",
+            "match": {
+              "location": "gmibank.stepdefinitions.Password_Step_Definitions.en_az_dört_karakterden_oluşan_bir_kücük_harf_iceren_bir_şifre_girin()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@customer"
+            "name": "@US_03"
+          },
+          {
+            "name": "@TC-03_010"
           }
         ]
       },
       {
-<<<<<<< HEAD
-        "start_timestamp": "2020-11-15T18:02:36.818Z",
-=======
-        "start_timestamp": "2020-11-15T21:32:11.535Z",
->>>>>>> master
-        "line": 18,
-        "name": "Employee create a new customer sayfasina gider",
+        "line": 4,
+        "name": "Kullanıcı GMi Bank ana sayfasına gider (https://gmibank.com/)",
         "description": "",
-        "id": "kullanici-customer-sayfasina-gider;employee-create-a-new-customer-sayfasina-gider",
-        "type": "scenario",
-        "keyword": "Scenario",
+        "type": "background",
+        "keyword": "Background",
         "steps": [
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 135000000,
-=======
-              "duration": 126000000,
->>>>>>> master
+              "duration": 1178000000,
               "status": "passed"
             },
-            "line": 19,
-            "name": "Employee My operations a tiklar",
+            "line": 5,
+            "name": "Kullanıcı GMi Bank ana sayfasına gider",
             "match": {
-              "location": "gmibank.stepdefinitions.CustomerStepDefinitions.employee_My_operations_a_tiklar()"
+              "location": "gmibank.stepdefinitions.Password_Step_Definitions.kullanıcı_GMi_Bank_ana_sayfasına_gider()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 140000000,
-=======
-              "duration": 135000000,
->>>>>>> master
+              "duration": 297000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "kullanıcı düğmesine tıklayın",
+            "match": {
+              "location": "gmibank.stepdefinitions.Password_Step_Definitions.kullanıcı_düğmesine_tıklayın()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 272000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Kayıt sayfasına gitmelisiniz",
+            "match": {
+              "location": "gmibank.stepdefinitions.Password_Step_Definitions.kayıt_sayfasına_gitmelisiniz()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 166000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Şifre metin kutusuna tıklayın",
+            "match": {
+              "location": "gmibank.stepdefinitions.Password_Step_Definitions.şifre_metin_kutusuna_tıklayın()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-15T22:53:17.471Z",
+        "line": 19,
+        "name": "En az bir büyük harf olmalı ve seviye grafiğinin buna göre değiştiğini görün",
+        "description": "",
+        "id": "kayıt-sayfası--parola-kullanımını-güvenli-ve-yüksek-düzeyli-bir-parola-ile-sınırlamalıdır;en-az-bir-büyük-harf-olmalı-ve-seviye-grafiğinin-buna-göre-değiştiğini-görün",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 269000000,
               "status": "passed"
             },
             "line": 20,
-            "name": "Employee Manage customera tiklar",
+            "name": "En az dort karakterden oluşan bir büyük harf iceren bir şifre girin",
             "match": {
-              "location": "gmibank.stepdefinitions.CustomerStepDefinitions.employee_Manage_customera_tiklar()"
+              "location": "gmibank.stepdefinitions.Password_Step_Definitions.en_az_dort_karakterden_oluşan_bir_büyük_harf_iceren_bir_şifre_girin()"
             },
             "keyword": "And "
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 239000000,
-=======
-              "duration": 260000000,
->>>>>>> master
+              "duration": 40000000,
               "status": "passed"
             },
             "line": 21,
-            "name": "Employee Create a new customera tiklar",
+            "name": "Renkli cizgi turuncu veya yeşil olmalıdır",
             "match": {
-              "location": "gmibank.stepdefinitions.CustomerStepDefinitions.employee_Create_a_new_customera_tiklar()"
+              "location": "gmibank.stepdefinitions.Password_Step_Definitions.renkli_cizgi_turuncu_veya_yeşil_olmalıdır()"
             },
             "keyword": "And "
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 3326000000,
-=======
-              "duration": 286000000,
->>>>>>> master
+              "duration": 138000000,
               "status": "passed"
             },
             "line": 22,
-            "name": "Employee SSN textboxina tiklar ve gecerli SSN numarsini girer",
+            "name": "Şifre onayı metin kutusuna tıklayın",
             "match": {
-              "location": "gmibank.stepdefinitions.CustomerStepDefinitions.employee_SSN_textboxina_tiklar_ve_gecerli_SSN_numarsini_girer()"
+              "location": "gmibank.stepdefinitions.Password_Step_Definitions.şifre_onayı_metin_kutusuna_tıklayın()"
             },
             "keyword": "And "
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 134000000,
-=======
-              "duration": 10121000000,
->>>>>>> master
+              "duration": 163000000,
               "status": "passed"
             },
             "line": 23,
-            "name": "Employee serach boxa tiklar",
+            "name": "En az dört karakterden oluşan bir büyük harf iceren bir şifre girin",
             "match": {
-              "location": "gmibank.stepdefinitions.CustomerStepDefinitions.employee_serach_boxa_tiklar()"
+              "location": "gmibank.stepdefinitions.Password_Step_Definitions.en_az_dört_karakterden_oluşan_bir_büyük_harf_iceren_bir_şifre_girin()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US_03"
+          },
+          {
+            "name": "@TC-03_002"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Kullanıcı GMi Bank ana sayfasına gider (https://gmibank.com/)",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 782000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Kullanıcı GMi Bank ana sayfasına gider",
+            "match": {
+              "location": "gmibank.stepdefinitions.Password_Step_Definitions.kullanıcı_GMi_Bank_ana_sayfasına_gider()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 258000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "kullanıcı düğmesine tıklayın",
+            "match": {
+              "location": "gmibank.stepdefinitions.Password_Step_Definitions.kullanıcı_düğmesine_tıklayın()"
             },
             "keyword": "And "
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 3069000000,
-=======
-              "duration": 3061000000,
->>>>>>> master
+              "duration": 234000000,
               "status": "passed"
             },
-            "line": 24,
-            "name": "Employee firstname gorur",
+            "line": 7,
+            "name": "Kayıt sayfasına gitmelisiniz",
             "match": {
-              "location": "gmibank.stepdefinitions.CustomerStepDefinitions.employee_firstname_gorur()"
+              "location": "gmibank.stepdefinitions.Password_Step_Definitions.kayıt_sayfasına_gitmelisiniz()"
             },
             "keyword": "And "
           },
           {
             "result": {
-<<<<<<< HEAD
-              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@class\u003d\u0027Toastify__toast Toastify__toast--error toastify-toast\u0027]\"}\n  (Session info: chrome\u003d86.0.4240.193)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027LAPTOP-M9ST69D5\u0027, ip: \u0027192.168.0.2\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_241\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.193, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\\Users\\adily\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63852}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 1ebaa2d87036e322a334307f0624c2cf\n*** Element info: {Using\u003dxpath, value\u003d//div[@class\u003d\u0027Toastify__toast Toastify__toast--error toastify-toast\u0027]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy14.getText(Unknown Source)\r\n\tat gmibank.stepdefinitions.CustomerStepDefinitions.employee_lastname_gorur(CustomerStepDefinitions.java:75)\r\n\tat ✽.Employee lastname gorur(file:///C:/Users/adily/IdeaProjects/gmibankaplication/src/test/resources/features/customer.feature:25)\r\n",
-              "duration": 10152000000,
-              "status": "failed"
-=======
-              "duration": 45000000,
+              "duration": 137000000,
               "status": "passed"
->>>>>>> master
             },
-            "line": 25,
-            "name": "Employee lastname gorur",
+            "line": 8,
+            "name": "Şifre metin kutusuna tıklayın",
             "match": {
-              "location": "gmibank.stepdefinitions.CustomerStepDefinitions.employee_lastname_gorur()"
+              "location": "gmibank.stepdefinitions.Password_Step_Definitions.şifre_metin_kutusuna_tıklayın()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-15T22:53:20.017Z",
+        "line": 26,
+        "name": "En az bir hane olmalı ve seviye çizelgesinin buna göre değiştiğini görün",
+        "description": "",
+        "id": "kayıt-sayfası--parola-kullanımını-güvenli-ve-yüksek-düzeyli-bir-parola-ile-sınırlamalıdır;en-az-bir-hane-olmalı-ve-seviye-çizelgesinin-buna-göre-değiştiğini-görün",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 253000000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "en az dort karakterden oluşan bir basamaklı bir şifre girin",
+            "match": {
+              "location": "gmibank.stepdefinitions.Password_Step_Definitions.en_az_dort_karakterden_oluşan_bir_basamaklı_bir_şifre_girin()"
             },
             "keyword": "And "
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 1000000,
-              "status": "skipped"
-=======
-              "duration": 31000000,
+              "duration": 41000000,
               "status": "passed"
->>>>>>> master
             },
-            "line": 26,
-            "name": "Employee email gorur",
+            "line": 28,
+            "name": "Renkli cizgi turuncu veya yeşil olmalıdır",
             "match": {
-              "location": "gmibank.stepdefinitions.CustomerStepDefinitions.employee_email_gorur()"
+              "location": "gmibank.stepdefinitions.Password_Step_Definitions.renkli_cizgi_turuncu_veya_yeşil_olmalıdır()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 135000000,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "Şifre onayı metin kutusuna tıklayın",
+            "match": {
+              "location": "gmibank.stepdefinitions.Password_Step_Definitions.şifre_onayı_metin_kutusuna_tıklayın()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 152000000,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "En az dört karakterden oluşan bir basamaklı bir şifre girin",
+            "match": {
+              "location": "gmibank.stepdefinitions.Password_Step_Definitions.en_az_dört_karakterden_oluşan_bir_basamaklı_bir_şifre_girin()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US_03"
+          },
+          {
+            "name": "@TC-03_003"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Kullanıcı GMi Bank ana sayfasına gider (https://gmibank.com/)",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 838000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Kullanıcı GMi Bank ana sayfasına gider",
+            "match": {
+              "location": "gmibank.stepdefinitions.Password_Step_Definitions.kullanıcı_GMi_Bank_ana_sayfasına_gider()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 204000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "kullanıcı düğmesine tıklayın",
+            "match": {
+              "location": "gmibank.stepdefinitions.Password_Step_Definitions.kullanıcı_düğmesine_tıklayın()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 292000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Kayıt sayfasına gitmelisiniz",
+            "match": {
+              "location": "gmibank.stepdefinitions.Password_Step_Definitions.kayıt_sayfasına_gitmelisiniz()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 155000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Şifre metin kutusuna tıklayın",
+            "match": {
+              "location": "gmibank.stepdefinitions.Password_Step_Definitions.şifre_metin_kutusuna_tıklayın()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-15T22:53:22.035Z",
+        "line": 33,
+        "name": "En az bir özel karakter olmalı ve seviye çubuğunun buna göre değiştiğini görün",
+        "description": "",
+        "id": "kayıt-sayfası--parola-kullanımını-güvenli-ve-yüksek-düzeyli-bir-parola-ile-sınırlamalıdır;en-az-bir-özel-karakter-olmalı-ve-seviye-çubuğunun-buna-göre-değiştiğini-görün",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 921000000,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "en az dort karakterden oluşan bir özel karakter iceren bir şifre girin",
+            "match": {
+              "location": "gmibank.stepdefinitions.Password_Step_Definitions.en_az_dort_karakterden_oluşan_bir_özel_karakter_iceren_bir_şifre_girin()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 50000000,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "Renkli cizgi turuncu veya yeşil olmalıdır",
+            "match": {
+              "location": "gmibank.stepdefinitions.Password_Step_Definitions.renkli_cizgi_turuncu_veya_yeşil_olmalıdır()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 151000000,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "Şifre onayı metin kutusuna tıklayın",
+            "match": {
+              "location": "gmibank.stepdefinitions.Password_Step_Definitions.şifre_onayı_metin_kutusuna_tıklayın()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 163000000,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "en az dört karakterden oluşan bir özel karakter iceren ikinci metin kutusuna girin",
+            "match": {
+              "location": "gmibank.stepdefinitions.Password_Step_Definitions.en_az_dört_karakterden_oluşan_bir_özel_karakter_iceren_ikinci_metin_kutusuna_girin()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US_03"
+          },
+          {
+            "name": "@TC-03_004"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Kullanıcı GMi Bank ana sayfasına gider (https://gmibank.com/)",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 885000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Kullanıcı GMi Bank ana sayfasına gider",
+            "match": {
+              "location": "gmibank.stepdefinitions.Password_Step_Definitions.kullanıcı_GMi_Bank_ana_sayfasına_gider()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 215000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "kullanıcı düğmesine tıklayın",
+            "match": {
+              "location": "gmibank.stepdefinitions.Password_Step_Definitions.kullanıcı_düğmesine_tıklayın()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 264000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Kayıt sayfasına gitmelisiniz",
+            "match": {
+              "location": "gmibank.stepdefinitions.Password_Step_Definitions.kayıt_sayfasına_gitmelisiniz()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 250000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Şifre metin kutusuna tıklayın",
+            "match": {
+              "location": "gmibank.stepdefinitions.Password_Step_Definitions.şifre_metin_kutusuna_tıklayın()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-15T22:53:24.837Z",
+        "line": 40,
+        "name": "Daha güçlü bir parola için en az yedi karakter olmalıdır",
+        "description": "",
+        "id": "kayıt-sayfası--parola-kullanımını-güvenli-ve-yüksek-düzeyli-bir-parola-ile-sınırlamalıdır;daha-güçlü-bir-parola-için-en-az-yedi-karakter-olmalıdır",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 318000000,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "Yedi karakterli bir şifre girin",
+            "match": {
+              "location": "gmibank.stepdefinitions.Password_Step_Definitions.yedi_karakterli_bir_şifre_girin()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 43000000,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "Renkli cizgi turuncu veya yeşil olmalıdır",
+            "match": {
+              "location": "gmibank.stepdefinitions.Password_Step_Definitions.renkli_cizgi_turuncu_veya_yeşil_olmalıdır()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 121000000,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "Şifre onayı metin kutusuna tıklayın",
+            "match": {
+              "location": "gmibank.stepdefinitions.Password_Step_Definitions.şifre_onayı_metin_kutusuna_tıklayın()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 175000000,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "ikinci kismada Yedi karakterli bir şifre girin",
+            "match": {
+              "location": "gmibank.stepdefinitions.Password_Step_Definitions.ikinci_kismada_Yedi_karakterli_bir_şifre_girin()"
             },
             "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@customer"
+            "name": "@US_03"
           },
           {
-            "name": "@managecustomer"
+            "name": "@TC-03_005"
           }
         ]
       }
     ],
-    "name": "Kullanici customer sayfasina gider",
+    "name": "Kayıt sayfası, parola kullanımını güvenli ve yüksek düzeyli bir parola ile sınırlamalıdır",
     "description": "",
-    "id": "kullanici-customer-sayfasina-gider",
+    "id": "kayıt-sayfası--parola-kullanımını-güvenli-ve-yüksek-düzeyli-bir-parola-ile-sınırlamalıdır",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/customer.feature",
+    "uri": "file:src/test/resources/features/passwordcolor.feature",
     "tags": [
       {
-        "name": "@customer",
+        "name": "@US_03",
         "type": "Tag",
         "location": {
           "line": 1,
