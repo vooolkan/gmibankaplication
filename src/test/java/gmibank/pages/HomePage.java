@@ -16,7 +16,7 @@ public class HomePage {
     @FindBy (xpath = "(//a[@class='dropdown-item'])[3]")
     public WebElement ayarlarSekmesi;
 
-    @FindBy (xpath = "//(//a[@class='dropdown-item'])[4]")
+    @FindBy (linkText = "Şifre")
     public WebElement SifreSekmesi;
 
     @FindBy (xpath = "(//a[@class='dropdown-item'])[5]")
