@@ -25,4 +25,14 @@ public class PasswordPage {
 
     @FindBy (id = "strengthBar")
     public WebElement strengthBar;
+
+    @FindBy (xpath = "//li[@style='background-color: rgb(255, 0, 0);']")
+    public WebElement line1Kirmizi;
+
+    @FindBy (xpath = "//li[@style='background-color: rgb(0, 255, 0);']")
+    public WebElement line1Yesil;
+
+    @FindBy (xpath = "//*[.='Şifre değiştirildi!']")
+    public WebElement uyariMEsaji;
+
 }

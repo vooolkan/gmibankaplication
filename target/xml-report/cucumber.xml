@@ -1,12 +1,61 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 
 
+
 <testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="43.587">
 <testcase classname="US_10 Employee adres olusturabilir" name="_2" time="42.34">
 
+
+<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="26.117">
+<testcase classname="Kullanici kayit sayfasi" name="TC01_kullanici registration sayfasina kayit olur" time="20.563">
+<failure message="expected:&lt;Registration saved![]&gt; but was:&lt;Registration saved![ ]&gt;" type="org.junit.ComparisonFailure"><![CDATA[Given kullanici site "https://www.gmibank.com/" adresine gider..............passed
+And kullanici insan simgesine tiklar........................................passed
+Given kullanici Register linkine tiklar.....................................passed
+And kullanici ssn numarasini "567-88-3609" yazar............................passed
+And kullanici ad ve soyad "kul" ve "abdullah" yazar.........................passed
+And kullanici adresini "deneme street 67800" yazar..........................passed
+And kullanici cep telefonunu "055-555-5555" yazar...........................passed
+And kullanici username "kl" yazar...........................................passed
+And kullanici e-mail adresini "klem@gmail.com" yazar........................passed
+And kullanici password "Forkul04." yazar....................................passed
+And kullanici dogrulama password u "Forkul04." tekrar yazar.................passed
+Then kullanici Register buttonuna tiklar ve "Registration saved! " iceren mesaji gorur.failed
+
+StackTrace:
+org.junit.ComparisonFailure: expected:<Registration saved![]> but was:<Registration saved![ ]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at gmibank.stepdefinitions.RegistrationStepDefinitions.kullanici_Register_buttonuna_tiklar_ve_iceren_mesaji_gorur(RegistrationStepDefinitions.java:84)
+	at ✽.kullanici Register buttonuna tiklar ve "Registration saved! " iceren mesaji gorur(file:///C:/Users/User/Documents/Java%20Dosyalarim/JavaPrograms/gmibankaplication/src/test/resources/features/registration.feature:20)
+]]></failure>
+</testcase>
+<testcase classname="Kullanici kayit sayfasi" name="TC01_kullanici registration sayfasina kayit olur 2" time="4.158">
+<failure message="expected:&lt;Registration saved![]&gt; but was:&lt;Registration saved![ ]&gt;" type="org.junit.ComparisonFailure"><![CDATA[Given kullanici site "https://www.gmibank.com/" adresine gider..............passed
+And kullanici insan simgesine tiklar........................................passed
+Given kullanici Register linkine tiklar.....................................passed
+And kullanici ssn numarasini "567-88-1667" yazar............................passed
+And kullanici ad ve soyad "kul" ve "abdullh" yazar..........................passed
+And kullanici adresini "deneme street 67800" yazar..........................passed
+And kullanici cep telefonunu "055-555-5555" yazar...........................passed
+And kullanici username "kuol" yazar.........................................passed
+And kullanici e-mail adresini "kalem@gmail.com" yazar.......................passed
+And kullanici password "Forkul04." yazar....................................passed
+And kullanici dogrulama password u "Forkul04." tekrar yazar.................passed
+Then kullanici Register buttonuna tiklar ve "Registration saved! " iceren mesaji gorur.failed
+
+StackTrace:
+org.junit.ComparisonFailure: expected:<Registration saved![]> but was:<Registration saved![ ]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at gmibank.stepdefinitions.RegistrationStepDefinitions.kullanici_Register_buttonuna_tiklar_ve_iceren_mesaji_gorur(RegistrationStepDefinitions.java:84)
+	at ✽.kullanici Register buttonuna tiklar ve "Registration saved! " iceren mesaji gorur(file:///C:/Users/User/Documents/Java%20Dosyalarim/JavaPrograms/gmibankaplication/src/test/resources/features/registration.feature:20)
+]]></failure>
+
+<testsuite errors="0" failures="6" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="9" time="76.983">
+<testcase classname="Ana sayfadaki sifre bolumu duzenlenebilir olmalidir." name="Kullanici gecerli kimlik bilgileriyle login olur" time="12.581">
 <system-out><![CDATA[Given Kullanici login sayfasina gider.......................................passed
-And username textbox kutusuna gecerli "Azizeke47" girer.....................passed
-And password textbox kutusuna gecerli "Mardin4738." girer...................passed
+And username textbox kutusuna gecerli username "customer01" girer...........passed
+And password textbox kutusuna gecerli password "3edc.%TGB:" girer...........passed
 And sign in butonuna tiklayarak giris yapar.................................passed
 
 And kullanici kendi username ini login kisminda gorur.......................passed
@@ -26,6 +75,250 @@ And Employee state textboxina gecerli state girer...........................pass
 And Employee accout secer...................................................passed
 And Employee zelle checkboxina tiklar.......................................passed
 Then Employee save butonuna tiklar ve basari mesajini alir..................passed
+
+Then kullanici kendi username ini login kisminda gorur......................passed
 ]]></system-out>
+</testcase>
+<testcase classname="Ana sayfadaki sifre bolumu duzenlenebilir olmalidir." name="Kullanici ayarlar sayfasina gider" time="0.433">
+<system-out><![CDATA[Given Kullanici, kullanici adina tiklar.....................................passed
+And Kullanici password sekmesine tiklar.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Ana sayfadaki sifre bolumu duzenlenebilir olmalidir." name="Kullanici mevcut passwordu degistirmek istediginde mevcut passwordu,yeni password olarak kullanamaz." time="10.994">
+<failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[.='Şifre değiştirildi!']&quot;}&#10;  (Session info: chrome=86.0.4240.193)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'LAPTOP-9KDP0QC2', ip: '192.168.0.198', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.193, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\ersn1\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59295}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: 24a832c3b6cdd437814d35ee5649310e&#10;*** Element info: {Using=xpath, value=//*[.='Şifre değiştirildi!']}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[And Kullanici Mevcut sifre "<3edc.%TGB:>", Yeni sifre ve Yeni sifre tekrar textboxlarinin hepsine mevcut sifreyi yazar.passed
+And Kullanici Kaydet butonuna tiklar........................................passed
+Then Kullanici mevcut passwordun yeni password olarak kullanilamadigini dogrular.failed
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[.='Şifre değiştirildi!']"}
+  (Session info: chrome=86.0.4240.193)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-9KDP0QC2', ip: '192.168.0.198', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.193, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\ersn1\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59295}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 24a832c3b6cdd437814d35ee5649310e
+*** Element info: {Using=xpath, value=//*[.='Şifre değiştirildi!']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy14.getText(Unknown Source)
+	at gmibank.stepdefinitions.PasswordStepDefinitions.kullanici_mevcut_passwordun_yeni_password_olarak_kullanilamadigini_dogrular(PasswordStepDefinitions.java:32)
+	at ✽.Kullanici mevcut passwordun yeni password olarak kullanilamadigini dogrular(file:///C:/Users/ersn1/IdeaProjects/gmibankaplication/src/test/resources/features/password.feature:24)
+]]></failure>
+</testcase>
+<testcase classname="Ana sayfadaki sifre bolumu duzenlenebilir olmalidir." name="Kullanici yeni passwordde kucuk harf kullandiginda seviye grafigi degisir." time="10.521">
+<failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//li[@style='background-color: rgb(255, 0, 0);']&quot;}&#10;  (Session info: chrome=86.0.4240.193)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'LAPTOP-9KDP0QC2', ip: '192.168.0.198', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.193, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\ersn1\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59295}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: 24a832c3b6cdd437814d35ee5649310e&#10;*** Element info: {Using=xpath, value=//li[@style='background-color: rgb(255, 0, 0);']}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given Kullanici Mevcut sifre "<3edc.%TGB:>" textboxina mevcut sifreyi girer.passed
+And Kullanici Yeni sifre textboxina icinde kucuk harf olmayan alti haneli "<2!58.G>" password girer.passed
+And Kullanici seviye grafigini kontrol eder.................................failed
+And Kullanici alti haneli passworde yedinci hane olarak herhangi bir kucuk harf "<a>" ekler.skipped
+Then Kullanici seviye grafiginde degisim oldugunu dogrular..................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//li[@style='background-color: rgb(255, 0, 0);']"}
+  (Session info: chrome=86.0.4240.193)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-9KDP0QC2', ip: '192.168.0.198', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.193, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\ersn1\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59295}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 24a832c3b6cdd437814d35ee5649310e
+*** Element info: {Using=xpath, value=//li[@style='background-color: rgb(255, 0, 0);']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy14.getCssValue(Unknown Source)
+	at gmibank.stepdefinitions.PasswordStepDefinitions.kullanici_seviye_grafigini_kontrol_eder(PasswordStepDefinitions.java:52)
+	at ✽.Kullanici seviye grafigini kontrol eder(file:///C:/Users/ersn1/IdeaProjects/gmibankaplication/src/test/resources/features/password.feature:30)
+]]></failure>
+</testcase>
+<testcase classname="Ana sayfadaki sifre bolumu duzenlenebilir olmalidir." name="Kullanici yeni passwordde buyuk harf kullandiginda seviye grafigi degisir." time="10.317">
+<failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//li[@style='background-color: rgb(255, 0, 0);']&quot;}&#10;  (Session info: chrome=86.0.4240.193)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'LAPTOP-9KDP0QC2', ip: '192.168.0.198', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.193, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\ersn1\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59295}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: 24a832c3b6cdd437814d35ee5649310e&#10;*** Element info: {Using=xpath, value=//li[@style='background-color: rgb(255, 0, 0);']}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given Kullanici Mevcut sifre "<3edc.%TGB:>" textboxina mevcut sifreyi girer.passed
+And Kullanici Yeni sifre textboxina icinde buyuk harf olmayan alti haneli password "<2!58.g>" girer.passed
+And Kullanici seviye grafigini kontrol eder.................................failed
+And Kullanici alti haneli passworde yedinci hane olarak herhangi bir büyük harf "<A>" ekler.skipped
+Then Kullanici seviye grafiginde degisim oldugunu dogrular..................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//li[@style='background-color: rgb(255, 0, 0);']"}
+  (Session info: chrome=86.0.4240.193)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-9KDP0QC2', ip: '192.168.0.198', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.193, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\ersn1\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59295}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 24a832c3b6cdd437814d35ee5649310e
+*** Element info: {Using=xpath, value=//li[@style='background-color: rgb(255, 0, 0);']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy14.getCssValue(Unknown Source)
+	at gmibank.stepdefinitions.PasswordStepDefinitions.kullanici_seviye_grafigini_kontrol_eder(PasswordStepDefinitions.java:52)
+	at ✽.Kullanici seviye grafigini kontrol eder(file:///C:/Users/ersn1/IdeaProjects/gmibankaplication/src/test/resources/features/password.feature:38)
+]]></failure>
+</testcase>
+<testcase classname="Ana sayfadaki sifre bolumu duzenlenebilir olmalidir." name="Kullanici yeni passwordde rakam kullandiginda seviye grafigi degisir." time="10.207">
+<failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//li[@style='background-color: rgb(255, 0, 0);']&quot;}&#10;  (Session info: chrome=86.0.4240.193)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'LAPTOP-9KDP0QC2', ip: '192.168.0.198', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.193, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\ersn1\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59295}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: 24a832c3b6cdd437814d35ee5649310e&#10;*** Element info: {Using=xpath, value=//li[@style='background-color: rgb(255, 0, 0);']}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given Kullanici Mevcut sifre "<3edc.%TGB:>" textboxina mevcut sifreyi girer.passed
+And Kullanici Yeni sifre textboxina icinde rakam olmayan alti haneli password "<k!mX.g>" girer.passed
+And Kullanici seviye grafigini kontrol eder.................................failed
+And Kullanici alti haneli passworde yedinci hane olarak herhangi bir rakam "<5>" ekler.skipped
+Then Kullanici seviye grafiginde degisim oldugunu dogrular..................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//li[@style='background-color: rgb(255, 0, 0);']"}
+  (Session info: chrome=86.0.4240.193)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-9KDP0QC2', ip: '192.168.0.198', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.193, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\ersn1\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59295}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 24a832c3b6cdd437814d35ee5649310e
+*** Element info: {Using=xpath, value=//li[@style='background-color: rgb(255, 0, 0);']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy14.getCssValue(Unknown Source)
+	at gmibank.stepdefinitions.PasswordStepDefinitions.kullanici_seviye_grafigini_kontrol_eder(PasswordStepDefinitions.java:52)
+	at ✽.Kullanici seviye grafigini kontrol eder(file:///C:/Users/ersn1/IdeaProjects/gmibankaplication/src/test/resources/features/password.feature:46)
+]]></failure>
+</testcase>
+<testcase classname="Ana sayfadaki sifre bolumu duzenlenebilir olmalidir." name="Kullanici yeni passwordde ozel karakter kullandiginda seviye grafigi degisir." time="10.232">
+<failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//li[@style='background-color: rgb(255, 0, 0);']&quot;}&#10;  (Session info: chrome=86.0.4240.193)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'LAPTOP-9KDP0QC2', ip: '192.168.0.198', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.193, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\ersn1\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59295}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: 24a832c3b6cdd437814d35ee5649310e&#10;*** Element info: {Using=xpath, value=//li[@style='background-color: rgb(255, 0, 0);']}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given Kullanici Mevcut sifre "<3edc.%TGB:>" textboxina mevcut sifreyi girer.passed
+And Kullanici Yeni sifre textboxina icinde ozel karakter olmayan alti haneli bir "<k7mX2g>" password girer.passed
+And Kullanici seviye grafigini kontrol eder.................................failed
+And Kullanici alti haneli passworde yedinci hane olarak herhangi bir ozel karakter "<!>" ekler.skipped
+Then Kullanici seviye grafiginde degisim oldugunu dogrular..................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//li[@style='background-color: rgb(255, 0, 0);']"}
+  (Session info: chrome=86.0.4240.193)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-9KDP0QC2', ip: '192.168.0.198', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.193, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\ersn1\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59295}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 24a832c3b6cdd437814d35ee5649310e
+*** Element info: {Using=xpath, value=//li[@style='background-color: rgb(255, 0, 0);']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy14.getCssValue(Unknown Source)
+	at gmibank.stepdefinitions.PasswordStepDefinitions.kullanici_seviye_grafigini_kontrol_eder(PasswordStepDefinitions.java:52)
+	at ✽.Kullanici seviye grafigini kontrol eder(file:///C:/Users/ersn1/IdeaProjects/gmibankaplication/src/test/resources/features/password.feature:54)
+]]></failure>
+</testcase>
+<testcase classname="Ana sayfadaki sifre bolumu duzenlenebilir olmalidir." name="Kullanici yeni passwordde 7 karakter kullandiginda seviye grafigi degisir." time="10.224">
+<failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//li[@style='background-color: rgb(255, 0, 0);']&quot;}&#10;  (Session info: chrome=86.0.4240.193)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'LAPTOP-9KDP0QC2', ip: '192.168.0.198', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.193, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\ersn1\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59295}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: 24a832c3b6cdd437814d35ee5649310e&#10;*** Element info: {Using=xpath, value=//li[@style='background-color: rgb(255, 0, 0);']}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given Kullanici Mevcut sifre "<3edc.%TGB:>" textboxina mevcut sifreyi girer.passed
+And Kullanici Yeni sifre textboxina alti haneli bir password "<4r6AY.>" girer.passed
+And Kullanici seviye grafigini kontrol eder.................................failed
+And Kullanici Yeni sifre textboxina yedi haneli password "<4r6AY.a>" girer..skipped
+Then Kullanici seviye grafiginde degisim oldugunu dogrular..................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//li[@style='background-color: rgb(255, 0, 0);']"}
+  (Session info: chrome=86.0.4240.193)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-9KDP0QC2', ip: '192.168.0.198', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.193, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\ersn1\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59295}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 24a832c3b6cdd437814d35ee5649310e
+*** Element info: {Using=xpath, value=//li[@style='background-color: rgb(255, 0, 0);']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy14.getCssValue(Unknown Source)
+	at gmibank.stepdefinitions.PasswordStepDefinitions.kullanici_seviye_grafigini_kontrol_eder(PasswordStepDefinitions.java:52)
+	at ✽.Kullanici seviye grafigini kontrol eder(file:///C:/Users/ersn1/IdeaProjects/gmibankaplication/src/test/resources/features/password.feature:62)
+]]></failure>
+
+</testcase>
+<testcase classname="Ana sayfadaki sifre bolumu duzenlenebilir olmalidir." name="Kullanici password basarili bir sekilde degistirir." time="0.308">
+<system-out><![CDATA[Given Kullanici Mevcut sifre "<3edc.%TGB:>" textboxina mevcut sifreyi girer.passed
+And Kullanici Yeni sifre textboxina gecerli passwordu "<4rfv.1QAY.>" girer..passed
+And Kullanici Yeni Sifre Tekrar textboxina gecerli passwordu "<4rfv.1QAY.>" tekrar girer.passed
+And Kullanici Kaydet butonuna tiklar........................................passed
+Then Kullanici mevcut passwordun basarili bir sekilde degistigini dogrular..passed
+
+]]></system-out>
+
 </testcase>
 </testsuite>
