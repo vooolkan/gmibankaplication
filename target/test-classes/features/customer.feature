@@ -6,8 +6,10 @@
       Given Kullanici login sayfasina gider
       And  kullanici username textbox kutusuna gecerli kullanici username "username" girer
       And kullanici password textbox kutusuna gecerli  kullanici password "password" girer
+
       And  employee username textbox kutusuna gecerli employee username "<username>" girer
       And employee password textbox kutusuna gecerli employee password "<password>" girer
+
       And  admin username textbox kutusuna gecerli  admin username "<username>" girer
       And admin password textbox kutusuna gecerli admin password "<password>" girer
 

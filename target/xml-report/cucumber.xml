@@ -1,22 +1,47 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="15.282">
-<testcase classname="Employee hesap olusturur ve yonetir" name="TC13_manage account testi" time="12.421">
-<system-out><![CDATA[Given Kullanici login sayfasina gider.......................................passed
-And username textbox kutusuna gecerli username "memur" girer................passed
-And password textbox kutusuna gecerli password "cucumber01." girer..........passed
-And sign in butonuna tiklayarak giris yapar.................................passed
-]]></system-out>
+<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="26.117">
+<testcase classname="Kullanici kayit sayfasi" name="TC01_kullanici registration sayfasina kayit olur" time="20.563">
+<failure message="expected:&lt;Registration saved![]&gt; but was:&lt;Registration saved![ ]&gt;" type="org.junit.ComparisonFailure"><![CDATA[Given kullanici site "https://www.gmibank.com/" adresine gider..............passed
+And kullanici insan simgesine tiklar........................................passed
+Given kullanici Register linkine tiklar.....................................passed
+And kullanici ssn numarasini "567-88-3609" yazar............................passed
+And kullanici ad ve soyad "kul" ve "abdullah" yazar.........................passed
+And kullanici adresini "deneme street 67800" yazar..........................passed
+And kullanici cep telefonunu "055-555-5555" yazar...........................passed
+And kullanici username "kl" yazar...........................................passed
+And kullanici e-mail adresini "klem@gmail.com" yazar........................passed
+And kullanici password "Forkul04." yazar....................................passed
+And kullanici dogrulama password u "Forkul04." tekrar yazar.................passed
+Then kullanici Register buttonuna tiklar ve "Registration saved! " iceren mesaji gorur.failed
+
+StackTrace:
+org.junit.ComparisonFailure: expected:<Registration saved![]> but was:<Registration saved![ ]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at gmibank.stepdefinitions.RegistrationStepDefinitions.kullanici_Register_buttonuna_tiklar_ve_iceren_mesaji_gorur(RegistrationStepDefinitions.java:84)
+	at ✽.kullanici Register buttonuna tiklar ve "Registration saved! " iceren mesaji gorur(file:///C:/Users/User/Documents/Java%20Dosyalarim/JavaPrograms/gmibankaplication/src/test/resources/features/registration.feature:20)
+]]></failure>
 </testcase>
-<testcase classname="Employee hesap olusturur ve yonetir" name="Employee customer account olusturur" time="1.735">
-<system-out><![CDATA[Given Employee My operations a tiklar.......................................passed
-And employee Manage Accounts tiklar.........................................passed
-And employee Create a new Account a tiklar..................................passed
-And employee Description text box a "buraya hesap aciklamasi yazilmali" bilgisini girer bos birakamaz.passed
-And employee Balance text box'a dolar miktarini sadece rakam girer..........passed
-And employee Account Type secimi yapabilir..................................passed
-And employee Account Status Type secimi yapabilmelidir......................passed
-And Employee kutusundan bir calisan secebilmelidir..........................passed
-Then kullanici sign in butonuna tiklayarak Manage Account sayfasina geri doner.passed
-]]></system-out>
+<testcase classname="Kullanici kayit sayfasi" name="TC01_kullanici registration sayfasina kayit olur 2" time="4.158">
+<failure message="expected:&lt;Registration saved![]&gt; but was:&lt;Registration saved![ ]&gt;" type="org.junit.ComparisonFailure"><![CDATA[Given kullanici site "https://www.gmibank.com/" adresine gider..............passed
+And kullanici insan simgesine tiklar........................................passed
+Given kullanici Register linkine tiklar.....................................passed
+And kullanici ssn numarasini "567-88-1667" yazar............................passed
+And kullanici ad ve soyad "kul" ve "abdullh" yazar..........................passed
+And kullanici adresini "deneme street 67800" yazar..........................passed
+And kullanici cep telefonunu "055-555-5555" yazar...........................passed
+And kullanici username "kuol" yazar.........................................passed
+And kullanici e-mail adresini "kalem@gmail.com" yazar.......................passed
+And kullanici password "Forkul04." yazar....................................passed
+And kullanici dogrulama password u "Forkul04." tekrar yazar.................passed
+Then kullanici Register buttonuna tiklar ve "Registration saved! " iceren mesaji gorur.failed
+
+StackTrace:
+org.junit.ComparisonFailure: expected:<Registration saved![]> but was:<Registration saved![ ]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at gmibank.stepdefinitions.RegistrationStepDefinitions.kullanici_Register_buttonuna_tiklar_ve_iceren_mesaji_gorur(RegistrationStepDefinitions.java:84)
+	at ✽.kullanici Register buttonuna tiklar ve "Registration saved! " iceren mesaji gorur(file:///C:/Users/User/Documents/Java%20Dosyalarim/JavaPrograms/gmibankaplication/src/test/resources/features/registration.feature:20)
+]]></failure>
 </testcase>
 </testsuite>
