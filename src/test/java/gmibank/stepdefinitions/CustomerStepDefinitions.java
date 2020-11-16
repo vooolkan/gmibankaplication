@@ -4,12 +4,6 @@ import gmibank.pages.CustomerPage;
 import gmibank.pages.RegistrationPage;
 import io.cucumber.java.en.Given;
 
-import jdk.internal.org.objectweb.asm.tree.TryCatchBlockNode;
-import org.codehaus.groovy.ast.expr.MapEntryExpression;
-import org.junit.Assert;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.support.ui.Wait;
-
 
 
 public class CustomerStepDefinitions {
@@ -63,22 +57,19 @@ public class CustomerStepDefinitions {
 
     }
 
-
-
-
-
-//    @Given("Employee firstname gorur")
-//    public void employee_firstname_gorur() {
-//        String isim= "Aziz";
-//        Assert.assertEquals(isim,customerPage.firstname.getText());
-
-
         @Given("Employee firstname gorur")
         public void employee_firstname_gorur() throws InterruptedException {
             Thread.sleep(3000);
             String isim2=  customerPage.firstname.getAttribute("value");
             System.out.println(isim2);
 
+    }
+
+
+    @Given("Employee lastname gorur")
+    public void employee_lastname_gorur() {
+        String soyisim= customerPage.lastname.getAttribute("value");
+        System.out.println(soyisim);
     }
 
 

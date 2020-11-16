@@ -14,10 +14,12 @@ import org.junit.runner.RunWith;
 
 
 
-        tags = "@US_03",
+
+
+        tags = "@kullaniciGiris",
+
 
         dryRun = false
-        //true
 
 )
 public class GmiRunner {
