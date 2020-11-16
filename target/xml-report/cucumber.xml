@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<<<<<<< HEAD
+
+
+
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="43.587">
+<testcase classname="US_10 Employee adres olusturabilir" name="_2" time="42.34">
+
+
 <testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="26.117">
 <testcase classname="Kullanici kayit sayfasi" name="TC01_kullanici registration sayfasina kayit olur" time="20.563">
 <failure message="expected:&lt;Registration saved![]&gt; but was:&lt;Registration saved![ ]&gt;" type="org.junit.ComparisonFailure"><![CDATA[Given kullanici site "https://www.gmibank.com/" adresine gider..............passed
@@ -44,13 +50,32 @@ org.junit.ComparisonFailure: expected:<Registration saved![]> but was:<Registrat
 	at gmibank.stepdefinitions.RegistrationStepDefinitions.kullanici_Register_buttonuna_tiklar_ve_iceren_mesaji_gorur(RegistrationStepDefinitions.java:84)
 	at ✽.kullanici Register buttonuna tiklar ve "Registration saved! " iceren mesaji gorur(file:///C:/Users/User/Documents/Java%20Dosyalarim/JavaPrograms/gmibankaplication/src/test/resources/features/registration.feature:20)
 ]]></failure>
-=======
+
 <testsuite errors="0" failures="6" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="9" time="76.983">
 <testcase classname="Ana sayfadaki sifre bolumu duzenlenebilir olmalidir." name="Kullanici gecerli kimlik bilgileriyle login olur" time="12.581">
 <system-out><![CDATA[Given Kullanici login sayfasina gider.......................................passed
 And username textbox kutusuna gecerli username "customer01" girer...........passed
 And password textbox kutusuna gecerli password "3edc.%TGB:" girer...........passed
 And sign in butonuna tiklayarak giris yapar.................................passed
+
+And kullanici kendi username ini login kisminda gorur.......................passed
+And Employee My operations a tiklar.........................................passed
+
+And Employee Manage customera tiklar........................................passed
+And Employee Create a new customera tiklar..................................passed
+And Employee SSN textboxina tiklar ve gecerli SSN numarsini girer...........passed
+And Employee serach boxa tiklar.............................................passed
+And Employee middle textboxina gecerli degeri girer.........................passed
+And Employee phonenumber textboxina gecerli degeri girer....................passed
+And Employee zip code gecerli degri girer...................................passed
+And Employee adress textboxina gecerli degeri girer.........................passed
+And Employee city textboxina gecerli degeri girer...........................passed
+And Employee country dropdownda gecerli ulkeyi secer........................passed
+And Employee state textboxina gecerli state girer...........................passed
+And Employee accout secer...................................................passed
+And Employee zelle checkboxina tiklar.......................................passed
+Then Employee save butonuna tiklar ve basari mesajini alir..................passed
+
 Then kullanici kendi username ini login kisminda gorur......................passed
 ]]></system-out>
 </testcase>
@@ -284,6 +309,7 @@ Session ID: 24a832c3b6cdd437814d35ee5649310e
 	at gmibank.stepdefinitions.PasswordStepDefinitions.kullanici_seviye_grafigini_kontrol_eder(PasswordStepDefinitions.java:52)
 	at ✽.Kullanici seviye grafigini kontrol eder(file:///C:/Users/ersn1/IdeaProjects/gmibankaplication/src/test/resources/features/password.feature:62)
 ]]></failure>
+
 </testcase>
 <testcase classname="Ana sayfadaki sifre bolumu duzenlenebilir olmalidir." name="Kullanici password basarili bir sekilde degistirir." time="0.308">
 <system-out><![CDATA[Given Kullanici Mevcut sifre "<3edc.%TGB:>" textboxina mevcut sifreyi girer.passed
@@ -291,7 +317,8 @@ And Kullanici Yeni sifre textboxina gecerli passwordu "<4rfv.1QAY.>" girer..pass
 And Kullanici Yeni Sifre Tekrar textboxina gecerli passwordu "<4rfv.1QAY.>" tekrar girer.passed
 And Kullanici Kaydet butonuna tiklar........................................passed
 Then Kullanici mevcut passwordun basarili bir sekilde degistigini dogrular..passed
+
 ]]></system-out>
->>>>>>> master
+
 </testcase>
 </testsuite>

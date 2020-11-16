@@ -1,4 +1,9 @@
 <<<<<<< HEAD
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/adress.feature");
+formatter.feature({
+  "name": "US_10 Employee adres olusturabilir",
+=======
+<<<<<<< HEAD
 $(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/registration.feature");
 formatter.feature({
   "name": "Kullanici kayit sayfasi",
@@ -7,10 +12,14 @@ $(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.
 formatter.feature({
   "name": "Ana sayfadaki sifre bolumu duzenlenebilir olmalidir.",
 >>>>>>> master
+>>>>>>> refs/remotes/origin/master
   "description": "",
   "keyword": "Feature",
   "tags": [
     {
+<<<<<<< HEAD
+      "name": "@adress"
+=======
 <<<<<<< HEAD
       "name": "@kullaniciGiris"
 =======
@@ -121,6 +130,7 @@ formatter.examples({
         "3edc.%TGB:"
 >>>>>>> master
       ]
+>>>>>>> refs/remotes/origin/master
     }
   ]
 });
@@ -154,14 +164,21 @@ formatter.result({
 });
 formatter.scenario({
 <<<<<<< HEAD
+  "name": "",
+=======
+<<<<<<< HEAD
   "name": "TC01_kullanici registration sayfasina kayit olur",
 =======
   "name": "Kullanici gecerli kimlik bilgileriyle login olur",
 >>>>>>> master
+>>>>>>> refs/remotes/origin/master
   "description": "",
-  "keyword": "Scenario Outline",
+  "keyword": "Scenario",
   "tags": [
     {
+<<<<<<< HEAD
+      "name": "@adress"
+=======
 <<<<<<< HEAD
       "name": "@kullaniciGiris"
     },
@@ -170,6 +187,7 @@ formatter.scenario({
 =======
       "name": "@PasswordPage"
 >>>>>>> master
+>>>>>>> refs/remotes/origin/master
     }
   ]
 });
@@ -199,6 +217,13 @@ formatter.result({
 });
 formatter.step({
 <<<<<<< HEAD
+  "name": "username textbox kutusuna gecerli \"Azizeke47\" girer",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.AdresStepDefinitions.username_textbox_kutusuna_gecerli_girer(java.lang.String)"
+=======
+<<<<<<< HEAD
   "name": "kullanici ad ve soyad \"kul\" ve \"abdullah\" yazar",
 =======
   "name": "password textbox kutusuna gecerli password \"3edc.%TGB:\" girer",
@@ -207,16 +232,25 @@ formatter.step({
 });
 formatter.match({
   "location": "gmibank.stepdefinitions.RegistrationStepDefinitions.kullanici_ad_ve_soyad_ve_yazar(java.lang.String,java.lang.String)"
+>>>>>>> refs/remotes/origin/master
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
+<<<<<<< HEAD
+  "name": "password textbox kutusuna gecerli \"Mardin4738.\" girer",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.AdresStepDefinitions.password_textbox_kutusuna_gecerli_girer(java.lang.String)"
+=======
   "name": "kullanici adresini \"deneme street 67800\" yazar",
   "keyword": "And "
 });
 formatter.match({
   "location": "gmibank.stepdefinitions.RegistrationStepDefinitions.kullanici_adresini_yazar(java.lang.String)"
+>>>>>>> refs/remotes/origin/master
 });
 formatter.result({
   "status": "passed"
@@ -232,6 +266,10 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
+<<<<<<< HEAD
+  "name": "kullanici kendi username ini login kisminda gorur",
+  "keyword": "And "
+=======
   "name": "kullanici username \"kl\" yazar",
   "keyword": "And "
 });
@@ -274,6 +312,7 @@ formatter.result({
 formatter.step({
   "name": "kullanici Register buttonuna tiklar ve \"Registration saved! \" iceren mesaji gorur",
   "keyword": "Then "
+>>>>>>> refs/remotes/origin/master
 });
 formatter.match({
   "location": "gmibank.stepdefinitions.RegistrationStepDefinitions.kullanici_Register_buttonuna_tiklar_ve_iceren_mesaji_gorur(java.lang.String)"
@@ -407,6 +446,11 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+<<<<<<< HEAD
+formatter.step({
+  "name": "Employee My operations a tiklar",
+  "keyword": "And "
+=======
 formatter.step({
   "name": "Kullanici mevcut passwordun yeni password olarak kullanilamadigini dogrular",
   "keyword": "Then "
@@ -434,6 +478,7 @@ formatter.scenario({
 formatter.step({
   "name": "Kullanici Mevcut sifre \"\u003c3edc.%TGB:\u003e\" textboxina mevcut sifreyi girer",
   "keyword": "Given "
+>>>>>>> refs/remotes/origin/master
 });
 formatter.match({
   "location": "gmibank.stepdefinitions.PasswordStepDefinitions.kullanici_Mevcut_sifre_textboxina_mevcut_sifreyi_girer(java.lang.String)"
@@ -459,8 +504,12 @@ formatter.match({
   "location": "gmibank.stepdefinitions.PasswordStepDefinitions.kullanici_seviye_grafigini_kontrol_eder()"
 });
 formatter.result({
+<<<<<<< HEAD
+  "status": "passed"
+=======
   "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//li[@style\u003d\u0027background-color: rgb(255, 0, 0);\u0027]\"}\n  (Session info: chrome\u003d86.0.4240.193)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027LAPTOP-9KDP0QC2\u0027, ip: \u0027192.168.0.198\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_251\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.193, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\\Users\\ersn1\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59295}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 24a832c3b6cdd437814d35ee5649310e\n*** Element info: {Using\u003dxpath, value\u003d//li[@style\u003d\u0027background-color: rgb(255, 0, 0);\u0027]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy14.getCssValue(Unknown Source)\r\n\tat gmibank.stepdefinitions.PasswordStepDefinitions.kullanici_seviye_grafigini_kontrol_eder(PasswordStepDefinitions.java:52)\r\n\tat ✽.Kullanici seviye grafigini kontrol eder(file:///C:/Users/ersn1/IdeaProjects/gmibankaplication/src/test/resources/features/password.feature:30)\r\n",
   "status": "failed"
+>>>>>>> refs/remotes/origin/master
 });
 formatter.step({
   "name": "Kullanici alti haneli passworde yedinci hane olarak herhangi bir kucuk harf \"\u003ca\u003e\" ekler",
@@ -651,6 +700,23 @@ formatter.result({
 });
 formatter.step({
 <<<<<<< HEAD
+  "name": "Employee middle textboxina gecerli degeri girer",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.AdresStepDefinitions.employee_middle_textboxina_gecerli_degeri_girer()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Employee phonenumber textboxina gecerli degeri girer",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.AdresStepDefinitions.employee_phonenumber_textboxina_gecerli_degeri_girer()"
+=======
+<<<<<<< HEAD
   "name": "kullanici cep telefonunu \"055-555-5555\" yazar",
   "keyword": "And "
 });
@@ -663,11 +729,29 @@ formatter.match({
 formatter.match({
   "location": "gmibank.stepdefinitions.PasswordStepDefinitions.kullanici_Yeni_sifre_textboxina_icinde_ozel_karakter_olmayan_alti_haneli_bir_password_girer(java.lang.String)"
 >>>>>>> master
+>>>>>>> refs/remotes/origin/master
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
+<<<<<<< HEAD
+  "name": "Employee zip code gecerli degri girer",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.AdresStepDefinitions.employee_zip_code_gecerli_degri_girer()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Employee adress textboxina gecerli degeri girer",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.AdresStepDefinitions.employee_adress_textboxina_gecerli_degeri_girer()"
+=======
 <<<<<<< HEAD
   "name": "kullanici username \"kuol\" yazar",
   "keyword": "And "
@@ -701,9 +785,70 @@ formatter.step({
 });
 formatter.match({
   "location": "gmibank.stepdefinitions.PasswordStepDefinitions.kullanici_seviye_grafiginde_degisim_oldugunu_dogrular()"
+>>>>>>> refs/remotes/origin/master
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
+});
+formatter.step({
+  "name": "Employee city textboxina gecerli degeri girer",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.AdresStepDefinitions.employee_city_textboxina_gecerli_degeri_girer()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Employee country dropdownda gecerli ulkeyi secer",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.AdresStepDefinitions.employee_country_dropdownda_gecerli_ulkeyi_secer()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Employee state textboxina gecerli state girer",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.AdresStepDefinitions.employee_state_textboxina_gecerli_state_girer()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Employee accout secer",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.AdresStepDefinitions.employee_accout_secer()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Employee zelle checkboxina tiklar",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.AdresStepDefinitions.employee_zelle_checkboxina_tiklar()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Employee save butonuna tiklar ve basari mesajini alir",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.AdresStepDefinitions.employee_save_butonuna_tiklar_ve_basari_mesajini_alir()"
+});
+formatter.result({
+  "status": "passed"
 });
 formatter.scenario({
   "name": "Kullanici yeni passwordde 7 karakter kullandiginda seviye grafigi degisir.",
