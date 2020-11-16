@@ -95,6 +95,7 @@ public class AccountManageStepDefinitions {
 
     @Given("Employee kutusundan bir calisan secebilmelidir")
     public void employee_kutusundan_bir_calisan_secebilmelidir() {
+        accountManagePage.selectEmployee.getText();
 
     }
 
